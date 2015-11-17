@@ -1,36 +1,37 @@
-/*@font-face {
-  font-family: 'Quicksand', sans-serif;
-}*/
+
+/*esconder barra de desplazamiento*/
 ::-webkit-scrollbar {
     display: none;
 }
 
 #header {
-    padding: 12px 0;
+    padding: 5px 0;
     background-color: #76C7D7;
     position: fixed;
     width: 100%;
 }
 
-body {
-  background-color: #6EB1B8;
-  font-family: 'Quicksand';
-  position: relative;
-  font-weight: 100;
-  top: 80px;
-  width: 100%;
-  height:  100%;
-}
-
 .headers {
   float: left;
   margin-right: auto;
+  color:inherit;
 }
 
 #botonera {
   margin-right: -50px;
-
 }
+
+body {
+  background-color: #388A86;
+  font-family: 'Quicksand'
+  src:"fonts/Quicksand_Light.otf";
+  color: #10615E;
+  position: relative;
+  font-weight: 100;
+  width: 100%;
+  height:  100%;
+}
+
 .container {
   margin-right: 30px;
 }
@@ -43,13 +44,30 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 30px;
+
 }
 
 #sobreNPK {
   height: 100vh;
-  background-color: #388A86;
+  background-color: #6EB1B8;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 5px;
+}
+
+/*carousel*/
+.carousel,.item,.active {
+  height:97%;
+}
+
+.carousel-inner {
+  height:97%;
+}
+
+.fill {
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size:cover;
 }
