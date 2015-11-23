@@ -34,7 +34,7 @@
 #nav {
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
 }
 
 
@@ -130,4 +130,21 @@ height: 94vh;
 
 #sobrenpk {
   background-color: #6EB1B8;
+}
+
+#btn-logo {
+  background-image: url('../img/npk-logo2.svg');
+  background-size: cover;
+  width: 26px;
+  height: 40px;
+
+}
+
+#aInicio {
+  position: absolute;
+  margin: 3px 0 5px 10px;
+}
+
+#menu {
+  
 }

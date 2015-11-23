@@ -14,10 +14,10 @@ $(document).ready(function() {
 			 var d = $('#npkapp').offset().top - 51;
 			 var e = $('#contacto').offset().top - 70;
 
-       if (y >= a) {
-          $('#navbarCollapse ul li a').removeClass('activo');
+       /*if (y >= a) {
+          $('#navbarCollapse a').removeClass('activo');
    				$('#aInicio').addClass('activo');
-       }
+       }*/
 
        if (y >= b) {
           $('#navbarCollapse ul li a').removeClass('activo');
