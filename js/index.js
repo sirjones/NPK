@@ -46,20 +46,4 @@ $(document).ready(function() {
  		 $(this).addClass('activo');
  	 });
 
-
-	 $('.fancybox').fancybox({
-							 prevEffect : 'none',
-							 nextEffect : 'none',
-
-							 closeBtn  : false,
-							 arrows    : false,
-							 nextClick : true,
-
-							 helpers : {
-									 thumbs : {
-											 width  : 50,
-											 height : 50
-									 }
-							 }
-							});
 });
