@@ -65,8 +65,7 @@
 
 body {
   background-color: #388A86;
-  font-family: 'Quicksand'
-  src:"fonts/Quicksand_Light.otf";
+  font-family: 'Quicksand' sans-serif;
   color: #10615E;
   position: relative;
   font-weight: 100;
@@ -146,5 +145,5 @@ height: 94vh;
 }
 
 #menu {
-  
+
 }
