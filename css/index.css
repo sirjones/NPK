@@ -128,10 +128,6 @@ height: 94vh;
 
 }
 
-.hidden {
-    display: none;
-}
-
 #sobrenpk {
   background-color: #6EB1B8;
 }
@@ -141,9 +137,14 @@ height: 94vh;
   background-size: cover;
   width: 26px;
   height: 40px;
+
 }
 
 #aInicio {
   position: absolute;
   margin: 3px 0 5px 10px;
+}
+
+#menu {
+  
 }
