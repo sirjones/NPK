@@ -98,11 +98,13 @@ body {
 }
 
 #imgLogo {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   height: 70vh;
   z-index: 97;
+  right: 42%;
+
   }
 
 #proyectos {
