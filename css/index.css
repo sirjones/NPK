@@ -72,7 +72,6 @@ padding-top:40px;
 .carousel-inner {
   height:100%;
   width: 100%;
-
 }
 
 .fill {
@@ -81,7 +80,6 @@ padding-top:40px;
   background-position:center;
   background-size:cover;
 } /*carousel*/
-
 
 body {
   background-color: #F7F7DF;
@@ -104,18 +102,22 @@ body {
   height: 70vh;
   z-index: 97;
   right: 42%;
-
   }
 
-#proyectos {
-  height: 96vh;
-  background-color: #D9D4B2;
-  color: #10615E;
-  margin-top: -20px;
+#sobrenpk {
+  height: 100vh;
+  padding-top: 10px;
 }
 
-#sobrenpk {
-  background-color: #6EB1B8;
+#proyectos {
+  position: relative;
+  height: 100vh;
+  background-color: #D9D4B2;
+  color: #10615E;
+}
+
+#npkapp {
+  height: 100vh;
 }
 
 #btn-logo {
@@ -124,6 +126,6 @@ body {
   height: 24px;
   }
 
-#aInicio {
-  margin-top: 1px;
+#contacto {
+  height: 100vh;
 }

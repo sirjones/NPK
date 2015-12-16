@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+	        scrollTop: $( $.attr(this, 'href') ).offset().top - 40
 	    }, 600);
 	    return false;
 	});
@@ -45,7 +45,5 @@ $(document).ready(function() {
  		 $('#navbarCollapse ul li a').removeClass('activo');
  		 $(this).addClass('activo');
  	 });
-
-
 
 });
