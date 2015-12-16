@@ -4,22 +4,19 @@
     display: none;
 }
 
-/*header*/
+/*barra superior*/
 #header {
     position: fixed;
     width: 100%;
 }
-
-
 
 .activo {
   color: #BDD8AC;
   background: rgba(255, 255, 255, 0.15);
 }
 
-
 .headers {
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .navbar {
@@ -29,6 +26,7 @@
 
 .navbar-default {
   background-color: #43A5A2;
+  min-height: 40px;
 }
 
 #nav {
@@ -36,7 +34,6 @@
   width: 100%;
   z-index: 99;
 }
-
 
 #nav li a {
     padding: 5px 15px;
@@ -56,25 +53,44 @@
 #nav li a:hover {
     color: #BDD8AC;
     background: rgba(255, 255, 255, 0.15);
+} /*barra superior*/
+
+
+/*carousel*/
+#carousel-example-generic {
+height: 100vh;
+padding-top:40px;
 }
 
-#botonera {
- /*header*/
+.carousel-control {
+  padding-top: 40px;
 }
+.carousel,.item,.active {
+  height:100%;
+}
+
+.carousel-inner {
+  height:100%;
+  width: 100%;
+
+}
+
+.fill {
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size:cover;
+} /*carousel*/
 
 
 body {
-  background-color: #388A86;
+  background-color: #F7F7DF;
   font-family: 'Quicksand' sans-serif;
   color: #10615E;
   position: relative;
   font-weight: 100;
   width: 100%;
   height: 100%;
-}
-
-.container {
-  margin-right: 30px;
 }
 
 #inicio {
@@ -86,45 +102,14 @@ body {
   top: 50%;
   transform: translateY(-50%);
   height: 70vh;
-  padding-top: 50px;
+  z-index: 97;
   }
-
-.contenidos {
-  height: 92vh;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-}
-
-/*carousel*/
-#carousel-example-generic {
-height: 94vh;
-}
-
-.carousel,.item,.active {
-  height:100%;
-}
-
-.carousel-inner {
-  height:100%;
-  width: 100%;
-}
-
-.fill {
-  width:100%;
-  height:100%;
-  background-position:center;
-  background-size:cover;
-} /*carousel*/
-
 
 #proyectos {
   height: 96vh;
-  background-color: #95E185;
+  background-color: #D9D4B2;
   color: #10615E;
   margin-top: -20px;
-
 }
 
 #sobrenpk {
@@ -133,17 +118,10 @@ height: 94vh;
 
 #btn-logo {
   background-image: url('../img/npk-logo2.svg');
-  background-size: cover;
-  width: 26px;
-  height: 40px;
-
-}
+  width: 16px;
+  height: 24px;
+  }
 
 #aInicio {
-  position: absolute;
-  margin: 3px 0 5px 10px;
-}
-
-#menu {
-
+  margin-top: 1px;
 }
