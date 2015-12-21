@@ -1,46 +1,130 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+  <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+  <title>NPK Arte Vegetal</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
-
 <body>
-  <div class="navbar navbar-fixed-top" id="header">
-	<div class="navbar-inner">
-		<div class="container">
-		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		<span class="icon-th-list"></span></a>
-			<ul class="nav pull-right brand" id="botonera">
-				<li class="active headers"><a href="#inicio">Inicio</a></li>
-				<li class="headers"><a href="#sobrenpk">Sobre NPK</a></li>
-        <li class="headers"><a href="#sobrenpk">Proyectos</a></li>
-        <li class="headers"><a href="#sobrenpk">NPKapp</a></li>
-				<li class="headers"><a href="#contacto">Contacto</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+  <div class="bs-example" id="nav">
+    <nav role="navigation" class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <button id="menu" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse" id="header">
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a id="aInicio" href="#inicio" rel="relativeanchor">
+                  <div id="btn-logo"></div>
+                </a></li>
+                <li><a id="aSobrenpk" href="#sobrenpk" class="headers" rel="relativeanchor">Sobre NPK</a></li>
+                <li><a id="aProyectos" href="#proyectos" class="headers" rel="relativeanchor">Proyectos</a></li>
+                <li><a id="aNpkapp" href="#npkapp" class="headers" rel="relativeanchor">NPKapp</a></li>
+                <li><a id="aContacto" href="#contacto" class="headers" rel="relativeanchor">Contacto</a></li>
+              </ul>
+        </div>
+    </nav>
+  </div>
 
   <div id="content">
-    <div align="center" id="npkLogo">
+    <!-- Inicio Logo -->
+    <div align="center" id="inicio" rel="relativeanchor">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  rel="relativeanchor">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/PJ_20-10_01.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/Muniz2.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/IMG_0070.jpg" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+      <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div> <!-- Carousel -->
       <img id="imgLogo" src="img/npk-logo.svg" class="img-responsive" alt="npk-logo"/>
+
     </div>
 
+    <!-- Sobre NPK -->
+    <div class="contenidos"  rel="relativeanchor" id="sobrenpk">
+      <p class="text-center" id="textoSobreNPK">
+      Somos un equipo de apasionados por las plantas, la naturaleza, el diseño y la construcción que desde hace tres años nos dedicamos de forma profesional a la realización de trabajos de jardinería artística, combinando el sistema vertical con la tecnica hidroponia.
+      Nuestros jardines buscan acompañar la línea de los espacios que habitan, involucrarse y convivir con ellos.
+      La ciudad  y el tiempo en el  que vivimos nos impuso una  búsqueda de optimización de espacio y recursos  y estos factores nos llevaron a investigar y experimentar nuevas técnicas de cultivo como la hidroponía y los sistemas de cultivo verticales. Luego de varios años de estudio y trabajo llevamos a cabo nuestros primeros sistemas de jardínes verticales con sistemas de fertirrigación e iluminación automática.
+      A partir de la realización del curso de “Construcción de ecosistemas verticales” en octubre de 2014 contamos con la validez y soporte de <a href="http://www.paisajismourbano.com/" target="_blank">“Paisajismo Urbano”</a> empresa líder hace diez años en el diseño y construcción de jardínes verticales en todo el mundo.
+      </p>
+    </div>
 
+    <!-- Proyectos -->
+    <div class="contenidos"  rel="relativeanchor" id="proyectos">
+      <p class="text-center" id="textoProyectos">
+      Somos un equipo de apasionados por las plantas, la naturaleza, el diseño y la construcción que desde hace tres años nos dedicamos de forma profesional a la realización de trabajos de jardinería artística, combinando el sistema vertical con la tecnica hidroponia.
+      Nuestros jardines buscan acompañar la línea de los espacios que habitan, involucrarse y convivir con ellos.
+      La ciudad  y el tiempo en el  que vivimos nos impuso una  búsqueda de optimización de espacio y recursos  y estos factores nos llevaron a investigar y experimentar nuevas técnicas de cultivo como la hidroponía y los sistemas de cultivo verticales. Luego de varios años de estudio y trabajo llevamos a cabo nuestros primeros sistemas de jardínes verticales con sistemas de fertirrigación e iluminación automática.
+      A partir de la realización del curso de “Construcción de ecosistemas verticales” en octubre de 2014 contamos con la validez y soporte de <a href="http://www.paisajismourbano.com/" target="_blank">“Paisajismo Urbano”</a> empresa líder hace diez años en el diseño y construcción de jardínes verticales en todo el mundo.
+      </p>
+    </div>
 
-  <div class="jumbotron" id="sobreNPK">
-    <h1 class="lead" id="tituloSobreNPK">
-      Lorem Ipsum
-    </h1>
-    <p class="text-center" id="textoSobreNPK">
-"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor tortor non mi placerat, ut sodales odio ullamcorper. Fusce vitae commodo nibh. Aenean euismod nibh lacus, sed eleifend nibh porttitor ac. Curabitur commodo feugiat lectus, vel egestas odio eleifend sed. Nullam fermentum mi sed pharetra auctor. Mauris tellus ex, malesuada ut fringilla ac, efficitur quis nisi. Maecenas mollis ornare finibus. Suspendisse vitae libero posuere, pharetra ligula scelerisque, semper lectus.
+    <!-- NPK app -->
+    <div class="contenidos"  rel="relativeanchor" id="npkapp">
+      <p class="text-center">
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor tortor non mi placerat, ut sodales odio ullamcorper. Fusce vitae commodo nibh. Aenean euismod nibh lacus, sed eleifend nibh porttitor ac. Curabitur commodo feugiat lectus, vel egestas odio eleifend sed. Nullam fermentum mi sed pharetra auctor. Mauris tellus ex, malesuada ut fringilla ac, efficitur quis nisi. Maecenas mollis ornare finibus. Suspendisse vitae libero posuere, pharetra ligula scelerisque, semper lectus.
 
-Fusce nisi elit, rhoncus sit amet euismod at, fringilla at justo. Sed eros mi, volutpat aliquam luctus non, congue quis nulla. Nam elementum, sem nec mattis interdum, justo lacus fermentum ex, ac sollicitudin nisl enim et orci. Curabitur convallis pharetra facilisis. Nullam in facilisis massa. Mauris hendrerit sollicitudin lectus sed pulvinar. Aenean ac malesuada libero, vitae iaculis nisi. Vestibulum tempor ac velit ac pellentesque. Nullam egestas vitae ipsum hendrerit ultrices. Suspendisse ornare sagittis odio a semper. Mauris quis nunc quis sapien pulvinar volutpat at ultrices risus.
-    </p>
-  </div>
-</div>
+      Fusce nisi elit, rhoncus sit amet euismod at, fringilla at justo. Sed eros mi, volutpat aliquam luctus non, congue quis nulla. Nam elementum, sem nec mattis interdum, justo lacus fermentum ex, ac sollicitudin nisl enim et orci. Curabitur convallis pharetra facilisis. Nullam in facilisis massa. Mauris hendrerit sollicitudin lectus sed pulvinar. Aenean ac malesuada libero, vitae iaculis nisi. Vestibulum tempor ac velit ac pellentesque. Nullam egestas vitae ipsum hendrerit ultrices. Suspendisse ornare sagittis odio a semper. Mauris quis nunc quis sapien pulvinar volutpat at ultrices risus.
+      </p>
+    </div>
+
+    <!-- Contacto -->
+    <div class="contenidos"  rel="relativeanchor" id="contacto">
+      <p class="text-center">
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor tortor non mi placerat, ut sodales odio ullamcorper. Fusce vitae commodo nibh. Aenean euismod nibh lacus, sed eleifend nibh porttitor ac. Curabitur commodo feugiat lectus, vel egestas odio eleifend sed. Nullam fermentum mi sed pharetra auctor. Mauris tellus ex, malesuada ut fringilla ac, efficitur quis nisi. Maecenas mollis ornare finibus. Suspendisse vitae libero posuere, pharetra ligula scelerisque, semper lectus.
+
+      Fusce nisi elit, rhoncus sit amet euismod at, fringilla at justo. Sed eros mi, volutpat aliquam luctus non, congue quis nulla. Nam elementum, sem nec mattis interdum, justo lacus fermentum ex, ac sollicitudin nisl enim et orci. Curabitur convallis pharetra facilisis. Nullam in facilisis massa. Mauris hendrerit sollicitudin lectus sed pulvinar. Aenean ac malesuada libero, vitae iaculis nisi. Vestibulum tempor ac velit ac pellentesque. Nullam egestas vitae ipsum hendrerit ultrices. Suspendisse ornare sagittis odio a semper. Mauris quis nunc quis sapien pulvinar volutpat at ultrices risus.
+      </p>
+    </div>
+
+</div> <!--content-->
+
+  <!-- Footer -->
   <footer>
     <div class="bottom-bar" id="footer">
       <div class="container">
@@ -48,3 +132,6 @@ Fusce nisi elit, rhoncus sit amet euismod at, fringilla at justo. Sed eros mi, v
     </div>
   </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
