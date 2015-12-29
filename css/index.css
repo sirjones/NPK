@@ -22,6 +22,7 @@
 .navbar {
   border: none;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .navbar-default {
@@ -33,6 +34,15 @@
   position: fixed;
   width: 100%;
   z-index: 99;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+ }
+
+.navbar{
+  border-radius: 0px;
+  border-top: 0px;
+  margin-top: 0px;
 }
 
 #nav li a {
@@ -86,7 +96,6 @@ body {
   font-family: 'Quicksand' sans-serif;
   color: #10615E;
   position: relative;
-  font-weight: 100;
   width: 100%;
   height: 100%;
 }
@@ -97,16 +106,15 @@ body {
 
 #imgLogo {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 70vh;
   z-index: 97;
-  right: 42%;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+}
 
 #sobrenpk {
   height: 100vh;
-  padding-top: 10px;
 }
 
 #proyectos {
