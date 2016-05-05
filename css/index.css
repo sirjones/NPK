@@ -4,10 +4,13 @@
     display: none;
 }
 
-/*barra superior*/
+/*HEADER*/
 #header {
     position: fixed;
     width: 100%;
+}
+
+.headers {
 }
 
 .activo {
@@ -15,35 +18,38 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-.headers {
-  margin-top: 4px;
-}
-
 .navbar {
   border: none;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .navbar-default {
   background-color: #43A5A2;
-  min-height: 40px;
+  min-height: 60px;
 }
 
 #nav {
   position: fixed;
   width: 100%;
   z-index: 99;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+ }
+
+.navbar{
+  border-radius: 0px;
+  border-top: 0px;
+  margin-top: 0px;
 }
 
 #nav li a {
-    padding: 5px 15px;
+    padding: 20px 30px;
     font-weight: bold;
     color: #90C96B;
     color: rgba(255, 255, 255, 0.7);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    border-radius: 14px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -54,6 +60,64 @@
     color: #BDD8AC;
     background: rgba(255, 255, 255, 0.15);
 } /*barra superior*/
+
+body {
+  background-color: #F7F7DF;
+  font-family: 'Quicksand' sans-serif;
+  color: #10615E;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#inicio {
+  position: absolute;
+  height: 100vh;
+}
+
+#imgLogo {
+  position: absolute;
+  z-index: 97;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+}
+
+#sobrenpk {
+  position:relative;
+  height: 100vh;
+}
+
+#textosobrenpk1 {
+  position: relative;
+  text-align: justify;
+  width: 40%;
+  float: left;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+#textosobrenpk2 {
+  position: relative;
+  text-align: center;
+  margin-left: 50%;
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+#textosobrenpk3 {
+position: relative;
+text-align: center;
+padding-top: 80px;
+padding-left: 240px;
+padding-right: 240px;
+}
+
+#inicio {
+  position: relative;
+  height: 100vh;
+}
 
 
 /*carousel*/
@@ -80,51 +144,6 @@ padding-top:40px;
   background-position:center;
   background-size:cover;
 } /*carousel*/
-
-body {
-  background-color: #F7F7DF;
-  font-family: 'Quicksand' sans-serif;
-  color: #10615E;
-  position: relative;
-  font-weight: 100;
-  width: 100%;
-  height: 100%;
-}
-
-#inicio {
-  height: 100vh;
-}
-
-#imgLogo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 70vh;
-  z-index: 97;
-  right: 42%;
-  }
-
-#sobrenpk {
-  height: 100vh;
-  padding-top: 10px;
-}
-
-#proyectos {
-  position: relative;
-  height: 100vh;
-  background-color: #D9D4B2;
-  color: #10615E;
-}
-
-#npkapp {
-  height: 100vh;
-}
-
-#btn-logo {
-  background-image: url('../img/npk-logo2.svg');
-  width: 16px;
-  height: 24px;
-  }
 
 #contacto {
   height: 100vh;
