@@ -11,7 +11,7 @@ $(document).ready(function() {
        var a = $('#inicio').offset().top;
        var b = $('#sobrenpk').offset().top - 51;
 			 var c = $('#proyectos').offset().top - 51;
-			 var e = $('#contacto').offset().top - 70;
+			 var d = $('#contacto').offset().top - 70;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
@@ -29,11 +29,6 @@ $(document).ready(function() {
 			 }
 
 			 if (y >= d) {
-					$('#navbarCollapse ul li a').removeClass('activo');
-					 $('#aNpkapp').addClass('activo');
-			 }
-
-			 if (y >= e) {
 					$('#navbarCollapse ul li a').removeClass('activo');
 					 $('#aContacto').addClass('activo');
 			 }
