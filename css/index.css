@@ -101,6 +101,7 @@ body {
 }
 
 #inicio {
+  position: absolute;
   height: 100vh;
 }
 
@@ -110,21 +111,40 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70vh;
+  height: 50vh;
 }
 
 #sobrenpk {
+  position:relative;
   height: 100vh;
+}
+#textosobrenpk1 {
+  position: relative;
+  text-align: justify;
+  width: 40%;
+  float: left;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+#textosobrenpk2 {
+  position: relative;
+  text-align: center;
+  margin-left: 50%;
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+#textosobrenpk3 {
+position: relative;
+text-align: center;
+padding-top: 80px;
+padding-left: 240px;
+padding-right: 240px;
 }
 
 #proyectos {
   position: relative;
-  height: 100vh;
-  background-color: #D9D4B2;
-  color: #10615E;
-}
-
-#npkapp {
   height: 100vh;
 }
 

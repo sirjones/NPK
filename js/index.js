@@ -11,13 +11,12 @@ $(document).ready(function() {
        var a = $('#inicio').offset().top;
        var b = $('#sobrenpk').offset().top - 51;
 			 var c = $('#proyectos').offset().top - 51;
-			 var d = $('#npkapp').offset().top - 51;
 			 var e = $('#contacto').offset().top - 70;
 
-       /*if (y >= a) {
+    if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
    				$('#aInicio').addClass('activo');
-       }*/
+       }
 
        if (y >= b) {
           $('#navbarCollapse ul li a').removeClass('activo');
