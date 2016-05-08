@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <link href="css/freelancer.css" rel="stylesheet">
@@ -41,39 +41,76 @@
 
   <!-- Content -->
   <div id="content">
+
     <!-- Sección Inicio -->
     <div align="center" rel="relativeanchor" id="inicio">
       <img id="imgLogo" src="img/logoblanco.png" class="img-responsive" alt="npk-logo"/>
     </div>
-    <!-- Sección Sobre NPK -->
-    <div  rel="relativeanchor" id="sobrenpk">
-      <div id="textosobrenpk1">
-        <h2 class="text-center">Quiénes somos</h2>
-        <br>
-        <p id="textoSobreNPK">
-        Somos un equipo de apasionados por las plantas, la naturaleza, el diseño y la construcción que desde hace tres años nos dedicamos de forma profesional a la realización de trabajos de jardinería artística, combinando el sistema vertical con la tecnica hidroponia.
-        A partir de la realización del curso de “Construcción de ecosistemas verticales” en octubre de 2014 contamos con la validez y soporte de <a href="http://www.paisajismourbano.com/" target="_blank">“Paisajismo Urbano”</a> empresa líder hace diez años en el diseño y construcción de jardínes verticales en todo el mundo.
-        </p>
-      </div>
-      <div id="textosobrenpk2">
-        <h1 class="text-center">Qué hacemos</h1>
-          <br>
-        <p>
-        Somos constructores de sistemas verticales. Realizamos cada jardín con dedicación y diseño personalizado basado en las particularidades del espacio y a las preferencias del cliente.
-        </p>
-          <br>
-          <br>
-        <p>Ofrecemos:</p>
-        <p>Asesoría paisajística</p>
-        <p>Diseño de Jardines verticales y cuadros vivos</p>
-        <p>Iluminación de Jardines</p>
-        <p>Sistemas de fertirrigación automática</p>
-        <p>Servicio de mantenimiento</p>
 
-      </div>
-        <div id="textosobrenpk3"><h1>NPK te brinda la posibilidad de tener un espacio verde en lugares donde parecía imposible.</h1>
-        </div>
+    <!-- Sección Sobre NPK -->
+    <div rel="relativeanchor" id="sobrenpk">
+          <div id="textoSobre1" class="col-md-8">
+            <h2>Quiénes somos</h2>
+            <br>
+            <p>
+            Somos un equipo de apasionados por las plantas, la naturaleza, el diseño y la construcción que desde hace tres años nos dedicamos de forma profesional a la realización de trabajos de jardinería artística, combinando el sistema vertical con la tecnica hidroponia.
+            A partir de la realización del curso de “Construcción de ecosistemas verticales” en octubre de 2014 contamos con la validez y soporte de <a href="http://www.paisajismourbano.com/" target="_blank">“Paisajismo Urbano”</a> empresa líder hace diez años en el diseño y construcción de jardínes verticales en todo el mundo.
+            </p>
+            <br>
+          </div>
+
+          <div id="textoSobre2" class="col-md-3">
+            <h1>Qué hacemos</h1>
+            <br>
+            <p>
+            Somos constructores de sistemas verticales. Realizamos cada jardín con dedicación y diseño personalizado basado en las particularidades del espacio y a las preferencias del cliente.
+            </p>
+            <br>
+            <br>
+            <p>Ofrecemos:</p>
+            <p>Asesoría paisajística</p>
+            <p>Diseño de Jardines verticales y cuadros vivos</p>
+            <p>Iluminación de Jardines</p>
+            <p>Sistemas de fertirrigación automática</p>
+            <p>Servicio de mantenimiento</p>
+          </div>
+
+          <div id="tarjetas">
+            <ul>
+                <li>
+                  <img src="img/tarjetas/tarjeta001.png" alt="..." class="fototarj img-responsive center-block">
+                    <br>
+                    <h5 class="text-center">Ivo Oxagaray</h5>
+                    <p class="text-center">Fundador, director de NPK</p>
+                </li>
+                <li>
+                  <img src="img/tarjetas/tarjeta002.png" alt="..." class="fototarj img-responsive center-block">
+                    <br>
+                    <h5 class="text-center">Gina Peiretti</h5>
+                    <p class="text-center">Diseñadora, paisajista</p>
+                  </li>
+                <li>
+                    <img src="img/tarjetas/tarjeta003.png" alt="..." class="fototarj img-responsive center-block">
+                    <br>
+                    <h5 class="text-center">Camila Benavente</h5>
+                    <p class="text-center">Arquitecta, paisajista</p>
+                </li>
+                <li>
+                    <img src="img/tarjetas/tarjeta004.png" alt="..." class="fototarj img-responsive center-block">
+                    <br>
+                    <h5 class="text-center">Braian Oxagaray</h5>
+                    <p class="text-center">Diseñador multimedial.</p>
+                </li>
+                <li style="margin-right: 0px;">
+                    <img src="img/tarjetas/tarjeta0052.png" alt="..." class="fototarj img-responsive center-block">
+                    <br>
+                    <h5 class="text-center">Sofía Chardin</h5>
+                    <p class="text-center">Fotógrafa, desarrolladora web.</p>
+                </li>
+            </ul>
+          </div>
     </div>
+
     <!-- Sección Proyectos -->
     <div id="proyectos" rel="relativeanchor">
                     <!-- myCarousel -->
@@ -153,6 +190,9 @@
 
     <!-- Contacto -->
       <section id="contacto" rel="relativeanchor">
+        <div>
+          <h3 id="tituloContacto"align="right">CONTACTO</h3><br>
+        </div>
           <div id="contact-box"class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <form name="sentMessage" id="contactForm" novalidate>
@@ -207,7 +247,6 @@
           </div>
 
           <div id="contactos" rel="relativeanchor">
-            <h3 align="right">CONTACTO</h3><br>
             <br>
             <br>
             <p align="right">Boedo, CP 1234.<br>
@@ -255,47 +294,17 @@
     </div> <!-- fin content-->
 
   <!-- Footer -->
-  <footer class="text-center">
+  <footer style="padding:0px;"class="text-center">
           <div class="footer-above">
               <div class="container">
                   <div class="row">
-                      <div class="footer-col col-md-4">
-                          <h3>Ubicación</h3>
-                          <p>Boedo<br>Ciudad Autónoma de Buenos Aires, CP 1234</p>
-                      </div>
-                      <div class="footer-col col-md-4">
-                          <h3>Encontranos en</h3>
-                          <ul class="list-inline">
-                              <li>
-                                  <a href="https://www.facebook.com/NPK-Arte-Vegetal-1434037520142824/?fref=ts" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                              </li>
-                              <li>
-                                  <a href="https://plus.google.com/u/0/110878085308505090723" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                              </li>
-                              <li>
-                                  <a href="https://twitter.com/NPKartevegetal" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                              </li>
-                              <li>
-                                  <a href="https://www.linkedin.com/company/npk-arte-vegetal?trk=top_nav_home" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="footer-col col-md-4">
-                          <h3>Hecho con ❤</h3>
-                          <p><a href="http://sofiachardin.com.ar">en Argentina</a>.</p>
+                      <div class="footer-col">
+                        <p> Diseño y código por Sofía Chardin. Copyright (c) 2016. All Rights Reserved.</p>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="footer-below">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-12">
-                          Diseño y programación por Sofía CHardin. Copyright &copy; 2016.
-                      </div>
-                  </div>
-              </div>
-          </div>
+
       </footer>
 
         <!-- jQuery -->
