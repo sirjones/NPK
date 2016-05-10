@@ -4,7 +4,7 @@
     display: none;
 }
 
-/*HEADER*/
+/*barra menú*/
 #header {
     position: fixed;
     width: 100%;
@@ -59,21 +59,21 @@
 #nav li a:hover {
     color: #BDD8AC;
     background: rgba(255, 255, 255, 0.15);
-}  /*barra superior*/
+}  /*barra menú*/
 
 body {
   background-color: #F7F7DF;
   font-size: 12px;
   color: #10615E;
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
+/*sección inicio*/
 #inicio {
   position: relative;
   min-height: 100vh;
   background-color: #69bd79;
+  background-image: url(../img/background/background01.png);
+  background-size: cover;
 }
 
 #imgLogo {
@@ -83,15 +83,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 50vh;
-}
+} /*sección inicio*/
+
+/*sección Sobre NPK*/
 
 #sobrenpk {
   position:relative;
-/*  padding: 5vh;*/
   background-color: #69bd79;
   min-height: 100vh;
-  padding: 20px;
+  padding: 5vh;
   overflow: hidden;
+  padding-top: 50px;
+}
+#textoI {
+  position: relative;
+  text-align: justify;
+  float: left;
+  height: auto;
 }
 
 #textoSobre1 {
@@ -99,21 +107,41 @@ body {
   text-align: justify;
   float: left;
   font-size: 16px;
+  color:#11572a;
+  max-width: 65%;
+
 }
+
 
 #textoSobre2 {
   position: relative;
-  padding-right: 0px;
+  margin-top: 80px;
+padding: 30px;
   text-align: justify;
   float: right;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #11572a;
+  color: white;
+  min-width: 25%;
+}
+
+#textoSobre3 {
+  position: relative;
   font-size: 14px;
+  color:#11572a;
+}
+
+@media (max-width:1000px;) {
+#textoSobre1, #textoSobre2, #textoSobre3 { width: 100%; }
 }
 
 #tarjetas {
   position:fixed
   width: 70%;
   float: left;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 #tarjetas ul {
@@ -126,6 +154,7 @@ body {
   height: auto;
   display: inline-block;
   vertical-align:top;
+  color: white;
 }
 .tarj{
 max-width: 150px;
@@ -134,6 +163,56 @@ min-width: 50px;
 
 .fototarj {
 border-radius: 100px;
+border: 2px solid #FFFFFF;}
+}
+
+/*sección PROYECTOS*/
+
+#proyectos {
+  position: relative;
+  padding: 5vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.textoProyectos{
+  position: relative;
+  min-width: 100vw;
+  padding-left: 50px;
+  padding-right: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.textoProyectos h3 {
+  position: relative;
+  margin: 0px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.textP2{
+  position: relative;
+  text-align: justify;
+  font-size: 15px;
+  padding-left: 30px;
+  float: left;
+  padding-top: -20px;
+}
+.beneficios {
+  position: relative;
+  overflow: hidden;
+  padding-right: 40px;
+  margin-top: -50px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 50px;
+  background-color: grey;
+  color: white;
+}
+
+.beneficios div ul li {
+  overflow: hidden;
 }
 /* CAROUSEL */
 .carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
@@ -143,48 +222,50 @@ border-radius: 100px;
 .onebyone-carosel .prev { left: -33.33%; }
 /* CAROUSEL */
 
+/*sección CONTACTO*/
+
 #contacto {
-  max-height: 85vh;
-  background-image: url(../img/background/NPKinicio02.jpg);
+  position: relative;
+  min-height: 100vh;
+  padding: 15vh;
+  background-image: url(../img/background/background02.jpg);
   background-size: cover;
   overflow: hidden;
 }
 
+#contacto p {
+  align-self: right;
+}
+
 #tituloContacto {
   position: relative;
-  margin-bottom: 40px;
-  padding-right: 10%;
+  overflow: hidden;
   float: right;
   color: white;
   font-size: 24px;
+  text-align: right;
 }
-
 
 #contact-box {
   position: relative;
   background-color: white;
   font-size: 10px;
   float: left;
-  margin-left: 10%;
-  margin-top: -30px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right:10px;
   border-radius: 10px;
+  padding: 2%;
 }
 
-@media (max-width: 992px) {
-  #contact-box {
-      width: 80%;
-  }
-}
+#contactos {
+position: relative;
+overflow: hidden;
+float: right;
+font-size: 16px;
+text-align: right;
+color: #449d44;
 
-#contact-box {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
 }
+#contactos h3 {
+  color: white;
 }
 
 
@@ -192,12 +273,19 @@ border-radius: 100px;
   position: relative;
   float: right;
 }
-#contactos {
-position: relative;
-padding-right: 10%;
-float: right;
-font-size: 16px;
-margin-top: -25px;
+
+@media (max-width: 1000px) {
+  #contact-box { width: 100%;
+                 margin: 0}
+}
+
+@media (max-width: 768px) {
+  #contacto {padding:2vh;}
+  #contactos { width: 100%;
+               float: none;
+               text-align: center; }
+  #contact-box { padding-left:3vh;
+                 padding-right:3vh; }
 }
 
 .label {
