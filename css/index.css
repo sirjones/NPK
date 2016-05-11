@@ -62,9 +62,10 @@
 }  /*barra menú*/
 
 body {
-  background-color: #F7F7DF;
+  background-color: #FFFFFF;
   font-size: 12px;
-  color: #10615E;
+  color: #2f2f2f;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 /*sección inicio*/
@@ -89,17 +90,18 @@ body {
 
 #sobrenpk {
   position:relative;
-  background-color: #69bd79;
-  min-height: 100vh;
-  padding: 5vh;
+  padding-left: 10vh;
   overflow: hidden;
-  padding-top: 50px;
 }
-#textoI {
+
+#textos1 {
   position: relative;
+  overflow: hidden;
   text-align: justify;
   float: left;
-  height: auto;
+  width: 70%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #textoSobre1 {
@@ -107,41 +109,40 @@ body {
   text-align: justify;
   float: left;
   font-size: 16px;
-  color:#11572a;
-  max-width: 65%;
-
 }
-
-
 #textoSobre2 {
   position: relative;
-  margin-top: 80px;
-padding: 30px;
   text-align: justify;
-  float: right;
+  float: left;
   font-size: 16px;
-  border-radius: 10px;
-  background-color: #11572a;
-  color: white;
-  min-width: 25%;
+  padding-bottom: 2%;
 }
-
 #textoSobre3 {
   position: relative;
-  font-size: 14px;
-  color:#11572a;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  float: right;
+  font-size: 16px;
+  background-color: #69bd79;
+  color: white;
+  min-height: 100vh;
 }
 
-@media (max-width:1000px;) {
-#textoSobre1, #textoSobre2, #textoSobre3 { width: 100%; }
+@media (max-width:1000px) {
+#textos1, #textoSobre3 { width: 100%; }
+#sobrenpk {padding: 2vh;}
 }
 
 #tarjetas {
-  position:fixed
-  width: 70%;
-  float: left;
-  margin-top: 40px;
-  margin-left: 30px;
+  position:relative;
+  width: 80%;
+  height: 100%;
+   margin: 0 auto;
+}
+@media (max-width:768px){
+  #tarjetas {width:100%;}
 }
 
 #tarjetas ul {
@@ -154,7 +155,6 @@ padding: 30px;
   height: auto;
   display: inline-block;
   vertical-align:top;
-  color: white;
 }
 .tarj{
 max-width: 150px;
@@ -163,7 +163,7 @@ min-width: 50px;
 
 .fototarj {
 border-radius: 100px;
-border: 2px solid #FFFFFF;}
+border: 2px solid #69bd79;}
 }
 
 /*sección PROYECTOS*/
@@ -220,6 +220,21 @@ border: 2px solid #FFFFFF;}
 .onebyone-carosel .active.right { left: 33.33%; }
 .onebyone-carosel .next { left: 33.33%; }
 .onebyone-carosel .prev { left: -33.33%; }
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.left { left: -40px;
+                         color: grey; }
+
+.carousel-control.right { right: -40px;
+                          color: grey; }
+
 /* CAROUSEL */
 
 /*sección CONTACTO*/
@@ -261,7 +276,7 @@ overflow: hidden;
 float: right;
 font-size: 16px;
 text-align: right;
-color: #449d44;
+color: white;
 
 }
 #contactos h3 {

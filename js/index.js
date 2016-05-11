@@ -9,7 +9,7 @@ $(document).ready(function() {
    $(window).scroll(function () {
        var y = $(this).scrollTop();
        var a = $('#inicio').offset().top;
-       var b = $('#sobrenpk').offset().top - 51;
+       var b = $('#sobrenpk').offset().top - 70;
 			 var c = $('#proyectos').offset().top - 51;
 			 var d = $('#contacto').offset().top - 51;
 
