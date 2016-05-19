@@ -1,17 +1,32 @@
 $(document).ready(function() {
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top - 40
+	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
 	    }, 600);
 	    return false;
+	});
+
+	$(document).ready(function(){
+	   var scroll_start = 0;
+	   var startchange = $('.nav');
+	   var offset = startchange.offset();
+	   $(document).scroll(function() {
+	      scroll_start = $(this).scrollTop();
+	      if(scroll_start > $('#sobrenpk').offset().top - 150) {
+	        	$('.navbar-default').css('background-color', 'rgba(34,34,34,0.9)');
+	       } else {
+	          $('.navbar-default').css('background-color', 'transparent');
+	       }
+	   });
 	});
 
    $(window).scroll(function () {
        var y = $(this).scrollTop();
        var a = $('#inicio').offset().top;
-       var b = $('#sobrenpk').offset().top - 70;
-			 var c = $('#proyectos').offset().top - 51;
-			 var d = $('#contacto').offset().top - 51;
+       var b = $('#sobrenpk').offset().top;
+			 var c = $('#jardinesV').offset().top;
+			 var d = $('#proyectos').offset().top;
+			 var e = $('#contacto').offset().top;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
@@ -25,13 +40,18 @@ $(document).ready(function() {
 
 			 if (y >= c) {
 					$('#navbarCollapse ul li a').removeClass('activo');
-					 $('#aProyectos').addClass('activo');
+					 $('#ajardinesV').addClass('activo');
 			 }
 
 			 if (y >= d) {
 					$('#navbarCollapse ul li a').removeClass('activo');
-					 $('#aContacto').addClass('activo');
+					 $('#aProyectos').addClass('activo');
 			 }
+
+			 if (y >= e) {
+				 $('#navbarCollapse ul li a').removeClass('activo');
+					$('#aContacto').addClass('activo');
+			}
 
  		});
 
@@ -60,5 +80,17 @@ $(document).ready(function() {
 		  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
 		  }
 		});
+
+/* FANCYBOX */
+
+
+$('.fancybox').fancybox({
+		 helpers : {
+			  title : {
+			   type : 'outside'
+			  	},
+
+		 },
+	 });
 
 });

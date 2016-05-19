@@ -4,6 +4,40 @@
     display: none;
 }
 
+
+body {
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #2f2f2f;
+  font-family: 'Droid Sans', sans-serif;
+  overflow-x: hidden;
+
+}
+.title {
+  font-size: 40;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.subtitle {
+  font-size: 25;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+h3 {
+  font-weight:700;
+}
+
 /*barra menú*/
 #header {
     position: fixed;
@@ -11,6 +45,7 @@
 }
 
 .headers {
+  font-size: 14px;
 }
 
 .activo {
@@ -20,32 +55,35 @@
 
 .navbar {
   border: none;
-  margin-bottom: 0px;
-  margin-top: 0;
+  margin:0px;
 }
 
 .navbar-default {
-  background-color: #43A5A2;
-  margin-bottom: 0;
+  background-color: transparent;
+  margin: 0px;
 }
 
 #nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
  }
 
 .navbar{
   border-radius: 0px;
   border-top: 0px;
   margin-top: 0px;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #nav li a {
-    padding: 20px 30px;
     font-weight: bold;
     color: #90C96B;
     color: rgba(255, 255, 255, 0.7);
@@ -60,13 +98,6 @@
     color: #BDD8AC;
     background: rgba(255, 255, 255, 0.15);
 }  /*barra menú*/
-
-body {
-  background-color: #FFFFFF;
-  font-size: 12px;
-  color: #2f2f2f;
-  font-family: 'Droid Sans', sans-serif;
-}
 
 /*sección inicio*/
 #inicio {
@@ -89,57 +120,79 @@ body {
 /*sección Sobre NPK*/
 
 #sobrenpk {
+
   position:relative;
-  padding-left: 10vh;
   overflow: hidden;
-}
-
-#textos1 {
-  position: relative;
-  overflow: hidden;
-  text-align: justify;
-  float: left;
-  width: 70%;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
-#textoSobre1 {
-  position: relative;
-  text-align: justify;
-  float: left;
-  font-size: 16px;
-}
-#textoSobre2 {
-  position: relative;
-  text-align: justify;
-  float: left;
-  font-size: 16px;
-  padding-bottom: 2%;
-}
-#textoSobre3 {
-  position: relative;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-right: 4vh;
-  padding-left: 4vh;
-  float: right;
-  font-size: 16px;
-  background-color: #69bd79;
-  color: white;
   min-height: 100vh;
+  background-color:#31946E;
+}
+
+.ab {
+  position: relative;
+  margin: auto;
+  width: 85%;
+  padding-top: 4%;
+  padding-bottom:2%;
+}
+
+.title1 {
+  position: relative;
+float: left;
+color: white;
+}
+
+.text1 {
+  position: relative;
+  float: right;
+  color: white;
+  padding-top: 5px;
+  line-height: 170%;
+}
+.prodserv {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  max-height: 45vh;
+}
+.services {
+    position: relative;
+    margin: auto;
+    width: 85%;
+    align-self: center;
+    padding-top: 2%;
+    padding-bottom:1%;
+    background-color:#337ab7;
+    border-radius: 10px;
+}
+.sitem {
+  position: relative;
+  margin: auto;
+align-content: center;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+.textR {
+  position: relative;
+  float: right;
+  max-width: 50%;
+
+}
+
+.about {
+  position: relative;
 }
 
 @media (max-width:1000px) {
 #textos1, #textoSobre3 { width: 100%; }
-#sobrenpk {padding: 2vh;}
+#sobrenpk {padding: 4vh;}
 }
 
 #tarjetas {
   position:relative;
   width: 80%;
-  height: 100%;
-   margin: 0 auto;
+  margin: 0 auto;
 }
 @media (max-width:768px){
   #tarjetas {width:100%;}
@@ -163,58 +216,94 @@ min-width: 50px;
 
 .fototarj {
 border-radius: 100px;
-border: 2px solid #69bd79;}
+}
+
+#jardinesV {
+  position:relative;
+  min-height: 100vh;
+  padding-left: 10vh;
+  overflow: hidden;
+}
+
+#textosJV {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8vh;
+  text-align: justify;
+  float: left;
+  width: 70%;
+}
+
+#textosJV1 {
+    position: relative;
+    text-align: justify;
+    float: left;
+}
+
+#textosJV1 p {
+  font-size: 16px;
+}
+
+#textosJV2 {
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+#mantenimiento {
+  position: relative;
+  float: left;
+  padding-top: 6vh;
+}
+
+#fotoM {
+  position: relative;
+  max-width: 25%;
+  float: right;
+}
+#textoM {
+  position: relative;
+  max-width: 70%;
+  float: left;
+  text-align: justify;
+  font-size: 17px;
+  padding-right: 1vh;
+}
+
+#beneficios {
+  position: relative;
+  padding-top: 5vh;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  float: right;
+  font-size: 18px;
+  background-color: #90C96B;
+  color: white;
+  min-height: 100vh;
+}
+
+@media (max-width:1000px) {
+#textosJV1, #textosJV2, #textosJV, #beneficios { width: 100%; }
+#fotoM { max-width: 30vh; }
+#jardinesV {padding: 4vh;}
 }
 
 /*sección PROYECTOS*/
 
 #proyectos {
   position: relative;
-  padding: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
   min-height: 100vh;
   overflow: hidden;
+  background-color: #90C96B;
+}
+.hidden {
+    display: none;
 }
 
-.textoProyectos{
-  position: relative;
-  min-width: 100vw;
-  padding-left: 50px;
-  padding-right: 30px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.textoProyectos h3 {
-  position: relative;
-  margin: 0px;
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-.textP2{
-  position: relative;
-  text-align: justify;
-  font-size: 15px;
-  padding-left: 30px;
-  float: left;
-  padding-top: -20px;
-}
-.beneficios {
-  position: relative;
-  overflow: hidden;
-  padding-right: 40px;
-  margin-top: -50px;
-  border-radius: 10px;
-  float: right;
-  margin-right: 50px;
-  background-color: grey;
-  color: white;
-}
-
-.beneficios div ul li {
-  overflow: hidden;
-}
 /* CAROUSEL */
+
 .carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
 .onebyone-carosel .active.left { left: -33.33%; }
 .onebyone-carosel .active.right { left: 33.33%; }
@@ -230,13 +319,28 @@ border: 2px solid #69bd79;}
 }
 
 .carousel-control.left { left: -40px;
-                         color: grey; }
+                         color: white }
 
 .carousel-control.right { right: -40px;
-                          color: grey; }
+                          color: white; }
+        /* CAROUSEL */
 
-/* CAROUSEL */
+/* Fancybox */
 
+.fancybox-nav span {
+ visibility: visible;
+}
+.fancybox-next span {
+ left: auto;
+ right: 20px;
+}
+.fancybox-prev span {
+ left: 20px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+max-height: 225.09px;
+}
 /*sección CONTACTO*/
 
 #contacto {
@@ -277,12 +381,11 @@ float: right;
 font-size: 16px;
 text-align: right;
 color: white;
-
 }
+
 #contactos h3 {
   color: white;
 }
-
 
 #socialbtn {
   position: relative;
@@ -306,7 +409,7 @@ color: white;
 .label {
   font-size: 10px;
 }
-
+/*
 footer {
   color: white;
 }
@@ -324,7 +427,7 @@ footer .footer-below {
   padding: 10px 0;
   background-color: #233140;
 }
-
+*/
 a,
 a:hover,
 a:focus,
