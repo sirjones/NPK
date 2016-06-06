@@ -13,7 +13,7 @@ $(document).ready(function() {
 	   $(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#sobrenpk').offset().top - 150) {
-	        	$('.navbar-default').css('background-color', 'rgba(34,34,34,0.9)');
+	        	$('.navbar-default').css('background-color', 'rgba(25, 130, 90,0.9)');
 	       } else {
 	          $('.navbar-default').css('background-color', 'transparent');
 	       }
