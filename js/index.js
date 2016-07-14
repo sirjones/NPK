@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var tamañoGrande = false;
+
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
@@ -64,7 +66,38 @@ $(document).ready(function() {
 
 		$('#myCarousel').carousel({
 		  interval: 10000
-		})
+		});
+
+	if ($(window).width() < 768) {
+		tamañoGrande = false;
+	}
+	else {
+		tamañoGrande = true;
+	}
+
+	if(tamañoGrande){
+		$('.carousel .item').each(function(){
+			  var next = $(this).next();
+			  if (!next.length) {
+			    next = $(this).siblings(':first');
+			  }
+			  next.children(':first-child').clone().appendTo($(this));
+
+			  if (next.next().length>0) {
+			    next.next().children(':first-child').clone().appendTo($(this));
+			  }
+			  else {
+			  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+			  }
+		});
+	}
+
+
+/* CODIGO CAROUSEL 3 COLUMNAS 
+
+		$('#myCarousel').carousel({
+		  interval: 10000
+		});
 
 		$('.carousel .item').each(function(){
 		  var next = $(this).next();
@@ -80,7 +113,7 @@ $(document).ready(function() {
 		  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
 		  }
 		});
-
+*/
 /* FANCYBOX */
 
 
@@ -93,4 +126,16 @@ $('.fancybox').fancybox({
 		 },
 	 });
 
+});
+
+function windowSize(){ 
+	if(tamañoGrande){
+		
+	}	
+}
+
+window.addEventListener('resize', function(event){
+	if ($(window).width() > 768) {
+		tamañoGrande = true;
+	}
 });

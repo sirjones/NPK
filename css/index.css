@@ -221,12 +221,29 @@ align-content: center;
 .hidden {
     display: none;
 }
+
+
 /* CAROUSEL */
 .carousel-inner.onebyone-carosel { margin: auto; width: 95%; }
 .onebyone-carosel .active.left { left: -33.33%; }
 .onebyone-carosel .active.right { left: 33.33%; }
 .onebyone-carosel .next { left: 33.33%; }
 .onebyone-carosel .prev { left: -33.33%; }
+
+/*
+@media (max-width: 768px) {
+    .carousel-inner.onebyone-carosel > .item { -webkit-transition: -webkit-transform .6s ease-in-out; -o-transition: -o-transform .6s ease-in-out; transition: transform .6s ease-in-out; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; perspective: 1000;} 
+    .carousel-inner.onebyone-carosel > .item.next, .carousel-inner.onebyone-carosel > .item.active.right { left: 0; -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0);} 
+    .carousel-inner.onebyone-carosel > .item.prev, .carousel-inner.onebyone-carosel > .item.active.left { left: 0; -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0);} 
+    .carousel-inner.onebyone-carosel > .item.next.left,.carousel-inner.onebyone-carosel > .item.prev.right,.carousel-inner.onebyone-carosel > .item.active {left: 0;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+
+.onebyone-carosel .active.left { left: -100%; }
+.onebyone-carosel .active.right { left: 100%; }
+.onebyone-carosel .next { left: 100%; }
+.onebyone-carosel .prev { left: -100%; }
+
+}
+*/
 
 .carousel-control.right {
   background-image: none;
@@ -260,9 +277,22 @@ align-content: center;
 
 .onebyone-carosel {
   position: relative;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: none;
 }
+
+.project {
+  padding: 0;
+}
+.thumbnail {
+    background-color: rgba(255,255,255,0.1);
+    margin: 15px;
+}
+
+
+/*@media (max-width: 768px) {
+ .project { width: 100%; }
+}*/
+
 #myCarousel {
   width: 90%;
   margin: auto;
@@ -272,7 +302,7 @@ align-content: center;
 .pr {
   position: relative;
   margin: auto;
-  width: 75%;
+  width: 80%;
   padding-top: 1%;
   padding-bottom:3%;
 
@@ -283,25 +313,12 @@ align-content: center;
 
 .caption p {
   font-size: 14px;
+  text-align: justify;
 }
 
-
-/* sección JARDINES VERTICALES*******************************************************************************************/
-#jardinesV {
-  position:relative;
-  min-height: 100vh;
-  padding-left: 10vh;
-  overflow: hidden;
-  display: none;
-}
-
-@media (max-width:1000px) {
-#textosJV1, #textosJV2, #textosJV, #beneficios { width: 100%; }
-#fotoM { max-width: 30vh; }
-#jardinesV {padding: 4vh;}
-}
 
 /*sección CONTACTO*******************************************************************************************/
+/*
 #tarjetas {
   position:relative;
   width: 80%;
@@ -331,6 +348,7 @@ min-width: 50px;
 border-radius: 100px;
 }
 
+*/
 
 #contacto {
   position: relative;
@@ -356,29 +374,119 @@ border-radius: 100px;
 
 #contact-box {
   position: relative;
-  background-color: white;
-  font-size: 10px;
+  width: 50%;
+  background-color: rgba(255,255,255,0.1);
+  font-size: 0.6em;
   float: left;
   border-radius: 10px;
   padding: 2%;
+  margin-left: 4%;
 }
+
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+input:-moz-placeholder {
+color: white !important;  
+}
+ 
+input::-moz-placeholder {
+color: white !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white !important;  
+}
+
+::-webkit-input-placeholder {
+color: white !important;
+}
+ 
+:-moz-placeholder {
+color: white !important;  
+}
+ 
+::-moz-placeholder { 
+color: white !important;  
+}
+ 
+:-ms-input-placeholder {  
+color: white !important;  
+}
+
 
 #contactos {
 position: relative;
 overflow: hidden;
 float: right;
-font-size: 16px;
+font-size: 0.9em;
 text-align: right;
 color: white;
+padding-top: 1.5%;
 }
 
 #contactos h3 {
   color: white;
 }
 
-#socialbtn {
-  position: relative;
+#btn-send {
   float: right;
+  margin-top: 7px;
+}
+
+#spam-advice {
+  float: left;
+  width: 70%;
+  margin-left: 2%;
+  padding-top: 8px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.twitter {
+  width: 54px;
+  height: 52px;
+  background-image: url(../img/btnsocial-11.png);
+  background-position: 0px 50px;
+}
+
+.twitter:hover {
+  background-position: 0px -5px;
+}
+
+.facebook {
+  width: 54px;
+  height: 52px;
+  background-image: url(../img/btnsocial-10.png);
+  background-position: 0px 50px;
+}
+
+.facebook:hover {
+  background-position: 0px -5px;
+}
+
+.instagram {
+  width: 55px;
+  height: 52px;
+  background-image: url(../img/btnsocial-08.png);
+  background-position: 0px 50px;
+}
+
+.instagram:hover {
+  background-position: 0px -5px;
+}
+
+.linkedin {
+  width: 56px;
+  height: 52px;
+  background-image: url(../img/btnsocial-09.png);
+  background-position: 0px 50px;
+}
+
+.linkedin:hover {
+  background-position: 0px -5px;
 }
 
 @media (max-width: 1000px) {
@@ -393,13 +501,14 @@ color: white;
                text-align: center; }
   #contact-box { padding-left:3vh;
                  padding-right:3vh; }
+  #spam-advice { padding-right: 25px; }
 }
 
 .label {
   font-size: 10px;
 }
 
-
+*/
 /*BTNS*************************************************************************************************************************/
 a,
 a:hover,
