@@ -25,34 +25,33 @@ $(document).ready(function() {
    $(window).scroll(function () {
        var y = $(this).scrollTop();
        var a = $('#inicio').offset().top;
-       var b = $('#sobrenpk').offset().top;
-			 var c = $('#bio').offset().top;
-			 var d = $('#proyectos').offset().top;
-			 var e = $('#contacto').offset().top;
+       var b = $('#bio').offset().top;
+       var c = $('#sobrenpk').offset().top;
+	   var d = $('#proyectos').offset().top;
+	   var e = $('#contacto').offset().top;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
    				$('#aInicio').addClass('activo');
        }
 
-       if (y >= b) {
+	if (y >= b) {
+		$('#navbarCollapse ul li a').removeClass('activo');
+				$('#aBio').addClass('activo');
+			 }
+	if (y >= c) {
           $('#navbarCollapse ul li a').removeClass('activo');
    				$('#aSobrenpk').addClass('activo');
        }
 
-			 if (y >= c) {
-					$('#navbarCollapse ul li a').removeClass('activo');
-					 $('#ajardinesV').addClass('activo');
+	if (y >= d) {
+		  $('#navbarCollapse ul li a').removeClass('activo');
+			    $('#aProyectos').addClass('activo');
 			 }
 
-			 if (y >= d) {
-					$('#navbarCollapse ul li a').removeClass('activo');
-					 $('#aProyectos').addClass('activo');
-			 }
-
-			 if (y >= e) {
-				 $('#navbarCollapse ul li a').removeClass('activo');
-					$('#aContacto').addClass('activo');
+	if (y >= e) {
+		  $('#navbarCollapse ul li a').removeClass('activo');
+				$('#aContacto').addClass('activo');
 			}
 
  		});

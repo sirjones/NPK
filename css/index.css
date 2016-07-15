@@ -115,6 +115,36 @@ body {
   height: 50vh;
 } 
 
+/*sección BIO*******************************************************************************************/
+
+#bio {
+  height: 100vh;
+  background-color: #69bd79;
+  background-image: url(../img/background/background01.png);
+  background-size: cover;
+  padding: 2vh;
+}
+#wrapperWrapper {
+  width: 50%;
+  height: auto;
+  float: right;
+  padding-top: 10vh;
+}
+  .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+  
+  .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*sección Sobre NPK*******************************************************************************************/
 #sobrenpk {
   position:relative;
@@ -371,6 +401,10 @@ color: white !important;
  
 :-ms-input-placeholder {  
 color: white !important;  
+}
+
+textarea, input {
+color: white !important;
 }
 
 
