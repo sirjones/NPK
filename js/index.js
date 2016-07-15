@@ -1,6 +1,6 @@
+var tamañoGrande;
 $(document).ready(function() {
-	var tamañoGrande = false;
-
+	
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
@@ -26,7 +26,7 @@ $(document).ready(function() {
        var y = $(this).scrollTop();
        var a = $('#inicio').offset().top;
        var b = $('#sobrenpk').offset().top;
-			 var c = $('#jardinesV').offset().top;
+			 var c = $('#bio').offset().top;
 			 var d = $('#proyectos').offset().top;
 			 var e = $('#contacto').offset().top;
 
@@ -125,17 +125,30 @@ $('.fancybox').fancybox({
 
 		 },
 	 });
-
+console.log($('.carousel .item').children("div"));
 });
 
-function windowSize(){ 
-	if(tamañoGrande){
-		
-	}	
-}
+window.addEventListener('resize', function(){
+    /*if($(window).width() > 768){
+        $('.carousel .item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
 
-window.addEventListener('resize', function(event){
-	if ($(window).width() > 768) {
-		tamañoGrande = true;
-	}
+            if (next.next().length>0) {
+              next.next().children(':first-child').clone().appendTo($(this));
+            }
+            else {
+                  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            }
+        });
+      
+    }else{ 
+        $('.carousel .item').each(function(){    
+            $(this).empty();
+        });
+    }
+    */
 });
