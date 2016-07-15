@@ -218,10 +218,6 @@ align-content: center;
   background-color: #6bb561;
 }
 
-.hidden {
-    display: none;
-}
-
 
 /* CAROUSEL */
 .carousel-inner.onebyone-carosel { margin: auto; width: 95%; }
@@ -229,21 +225,6 @@ align-content: center;
 .onebyone-carosel .active.right { left: 33.33%; }
 .onebyone-carosel .next { left: 33.33%; }
 .onebyone-carosel .prev { left: -33.33%; }
-
-/*
-@media (max-width: 768px) {
-    .carousel-inner.onebyone-carosel > .item { -webkit-transition: -webkit-transform .6s ease-in-out; -o-transition: -o-transform .6s ease-in-out; transition: transform .6s ease-in-out; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-perspective: 1000; perspective: 1000;} 
-    .carousel-inner.onebyone-carosel > .item.next, .carousel-inner.onebyone-carosel > .item.active.right { left: 0; -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0);} 
-    .carousel-inner.onebyone-carosel > .item.prev, .carousel-inner.onebyone-carosel > .item.active.left { left: 0; -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0);} 
-    .carousel-inner.onebyone-carosel > .item.next.left,.carousel-inner.onebyone-carosel > .item.prev.right,.carousel-inner.onebyone-carosel > .item.active {left: 0;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
-
-.onebyone-carosel .active.left { left: -100%; }
-.onebyone-carosel .active.right { left: 100%; }
-.onebyone-carosel .next { left: 100%; }
-.onebyone-carosel .prev { left: -100%; }
-
-}
-*/
 
 .carousel-control.right {
   background-image: none;
@@ -288,11 +269,6 @@ align-content: center;
     margin: 15px;
 }
 
-
-/*@media (max-width: 768px) {
- .project { width: 100%; }
-}*/
-
 #myCarousel {
   width: 90%;
   margin: auto;
@@ -316,39 +292,18 @@ align-content: center;
   text-align: justify;
 }
 
+.galeria {
+  height: 55px;
+  width: 58px;
+  background-image: url(../img/galeriab-12.png);
+  background-position: 0px 53px;
+}
+.galeria:hover {
+  background-position: 0px 0px;
+}
+
 
 /*sección CONTACTO*******************************************************************************************/
-/*
-#tarjetas {
-  position:relative;
-  width: 80%;
-  margin: 0 auto;
-}
-@media (max-width:768px){
-  #tarjetas {width:100%;}
-}
-
-#tarjetas ul {
-  padding-left: 0px;
-}
-#tarjetas ul li {
-  width: 15%;
-  max-width: 150px;
-  margin-right: 5%;
-  height: auto;
-  display: inline-block;
-  vertical-align:top;
-}
-.tarj{
-max-width: 150px;
-min-width: 50px;
-}
-
-.fototarj {
-border-radius: 100px;
-}
-
-*/
 
 #contacto {
   position: relative;
@@ -446,47 +401,47 @@ padding-top: 1.5%;
 }
 
 .twitter {
-  width: 54px;
-  height: 52px;
-  background-image: url(../img/btnsocial-11.png);
-  background-position: 0px 50px;
+  width: 56px;
+  height: 54px;
+  background-image: url(../img/btnsocialb-10.png);
+  background-position: 0px 52px;
 }
 
 .twitter:hover {
-  background-position: 0px -5px;
+  background-position: 0px -3px;
 }
 
 .facebook {
-  width: 54px;
-  height: 52px;
-  background-image: url(../img/btnsocial-10.png);
-  background-position: 0px 50px;
+  width: 56px;
+  height: 54px;
+  background-image: url(../img/btnsocialb-09.png);
+  background-position: 0px 52px;
 }
 
 .facebook:hover {
-  background-position: 0px -5px;
+  background-position: 0px -3px;
 }
 
 .instagram {
   width: 55px;
-  height: 52px;
-  background-image: url(../img/btnsocial-08.png);
-  background-position: 0px 50px;
+  height: 54px;
+  background-image: url(../img/btnsocialb-07.png);
+  background-position: 0px 52px;
 }
 
 .instagram:hover {
-  background-position: 0px -5px;
+  background-position: 0px -3px;
 }
 
 .linkedin {
   width: 56px;
-  height: 52px;
-  background-image: url(../img/btnsocial-09.png);
-  background-position: 0px 50px;
+  height: 54px;
+  background-image: url(../img/btnsocialb-08.png);
+  background-position: 0px 52px;
 }
 
 .linkedin:hover {
-  background-position: 0px -5px;
+  background-position: 0px -3px;
 }
 
 @media (max-width: 1000px) {
