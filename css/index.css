@@ -267,12 +267,13 @@ align-content: center;
 .thumbnail {
     background-color: rgba(255,255,255,0.1);
     margin: 15px;
+    margin-top: 15%;
+    padding-bottom: 15%;
 }
 
 #myCarousel {
   width: 90%;
   margin: auto;
-
 }
 
 .pr {
@@ -293,6 +294,7 @@ align-content: center;
 }
 
 .galeria {
+  float: right;
   height: 55px;
   width: 58px;
   background-image: url(../img/galeriab-12.png);
