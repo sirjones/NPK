@@ -113,7 +113,8 @@
 	position: absolute;
 	top: 0;
 	width: 20%;
-	height: 90%;
+	height: 75%;
+	margin-top: 10%;
 	cursor: pointer;
 	text-decoration: none;
 	background: transparent url(blank.gif); /* helps IE */

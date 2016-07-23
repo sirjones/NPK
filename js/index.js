@@ -14,7 +14,7 @@ $(document).ready(function() {
 	   var offset = startchange.offset();
 	   $(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
-	      if(scroll_start > $('#sobrenpk').offset().top - 150) {
+	      if(scroll_start > $('#bio').offset().top - 150) {
 	        	$('.navbar-default').css('background-color', 'rgba(25, 130, 90,0.9)');
 	       } else {
 	          $('.navbar-default').css('background-color', 'transparent');
@@ -25,32 +25,37 @@ $(document).ready(function() {
    $(window).scroll(function () {
        var y = $(this).scrollTop();
        var a = $('#inicio').offset().top;
-       var b = $('#bio').offset().top;
-       var c = $('#sobrenpk').offset().top;
-	   var d = $('#proyectos').offset().top;
-	   var e = $('#contacto').offset().top;
+       var b = $('#bio').offset().top -200;
+       var c = $('#sobrenpk').offset().top -200;
+	   var d = $('#proyectos').offset().top -200;
+	   var e = $('#contacto').offset().top -200;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
+          $('#navbarCollapse a').blur();
    				$('#aInicio').addClass('activo');
        }
 
 	if (y >= b) {
 		$('#navbarCollapse ul li a').removeClass('activo');
+		$('#navbarCollapse ul li a').blur();
 				$('#aBio').addClass('activo');
 			 }
 	if (y >= c) {
           $('#navbarCollapse ul li a').removeClass('activo');
+          $('#navbarCollapse ul li a').blur();
    				$('#aSobrenpk').addClass('activo');
        }
 
 	if (y >= d) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
+		  $('#navbarCollapse ul li a').blur();
 			    $('#aProyectos').addClass('activo');
 			 }
 
 	if (y >= e) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
+		  $('#navbarCollapse ul li a').blur();
 				$('#aContacto').addClass('activo');
 			}
 
@@ -91,63 +96,15 @@ $(document).ready(function() {
 		});
 	}
 
-
-/* CODIGO CAROUSEL 3 COLUMNAS 
-
-		$('#myCarousel').carousel({
-		  interval: 10000
-		});
-
-		$('.carousel .item').each(function(){
-		  var next = $(this).next();
-		  if (!next.length) {
-		    next = $(this).siblings(':first');
-		  }
-		  next.children(':first-child').clone().appendTo($(this));
-
-		  if (next.next().length>0) {
-		    next.next().children(':first-child').clone().appendTo($(this));
-		  }
-		  else {
-		  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-		  }
-		});
-*/
 /* FANCYBOX */
-
 
 $('.fancybox').fancybox({
 		 helpers : {
 			  title : {
-			   type : 'outside'
+			   type : 'inside'
+
 			  	},
 
 		 },
 	 });
-console.log($('.carousel .item').children("div"));
-});
-
-window.addEventListener('resize', function(){
-    /*if($(window).width() > 768){
-        $('.carousel .item').each(function(){
-            var next = $(this).next();
-            if (!next.length) {
-              next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            if (next.next().length>0) {
-              next.next().children(':first-child').clone().appendTo($(this));
-            }
-            else {
-                  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-            }
-        });
-      
-    }else{ 
-        $('.carousel .item').each(function(){    
-            $(this).empty();
-        });
-    }
-    */
 });
