@@ -89,7 +89,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#imgLogo {
+#logo {
   position: absolute;
   z-index: 97;
   top: 50%;
@@ -98,12 +98,36 @@ body {
   height: 50vh;
 }
 
+
+#intro {
+  background-image: url('../img/background/NPKsequence2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+    height: 320px;
+  width: 156px;
+}
+
+.hi {
+    -webkit-animation: play 7s steps(95);
+       -moz-animation: play 7s steps(95);
+        -ms-animation: play 7s steps(95);
+         -o-animation: play 7s steps(95);
+            animation: play 7s steps(95);
+            animation-fill-mode: forwards;
+
+}
+
+
+@keyframes play {
+   100% { background-position: -14823px; }
+}
+
 /*sección BIO*******************************************************************************************/
 
 #bio {
-  height: 93vh;
+  height: 100vh;
   background-color: #00a990;
-  background-image: url(../img/background/bio2.png);
+  background-image: url(../img/background/bio.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,17 +163,94 @@ body {
   height: 85%;
   margin-right: 9%;
   margin-top: -1%;
+  border:solid;
+  border-color: white;
 }
 
 .tarjeta {
   height: 20%;
   font-size: 1vw;
+  transition:all 0.3s ease;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
 }
 
 .tarjeta b {
   line-height: 170%;
-
 }
+
 #videoarea {
   float: right;
   width: 60%;
@@ -305,6 +406,20 @@ body {
   #prodserv ul li p { font-size: 0.7em; }
 
 }
+.hvr-grow {
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
 /*sección PROYECTOS*******************************************************************************************/
 #proyectos {
   position: relative;
@@ -404,14 +519,12 @@ body {
 .galeria:hover {
   background-position: 0px 0px;
 }
-
-
 /*sección CONTACTO*******************************************************************************************/
 
 #contacto {
   position: relative;
   min-height: 93vh;
-  background-image: url(../img/background/backgroundcontact.png);
+  background-image: url(../img/background/backgroundcontact.jpg);
   background-size: cover;
   overflow: hidden;
   padding: 4%;

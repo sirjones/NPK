@@ -1,6 +1,8 @@
 var tamañoGrande;
+
 $(document).ready(function() {
-	
+ 	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, servitem1, servitem2, servitem3, servitem4, servitem5, servitem6, #contactos, #contact').css('opacity', 0);
+
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
@@ -21,6 +23,121 @@ $(document).ready(function() {
 	       }
 	   });
 	});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('intro'),
+  handler: function() {
+   	$('#equipo').addClass('fadeInLeft')
+  },
+  offset: -200 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('intro'),
+  handler: function() {
+   	$('#titulovideo').addClass('fadeInUp')
+  },
+  offset: -320
+});
+
+
+var waypoint = new Waypoint({
+  element: document.getElementById('intro'),
+  handler: function() {
+   	$('#wrapperWrapper').addClass('fadeInRight')
+  },
+  offset: -220 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.imgSobrenpk').addClass('fadeInRight')
+  },
+  offset: -220 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.text1').addClass('fadeIn')
+  },
+  offset: -220 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.textPU').addClass('fadeInRight')
+  },
+  offset: -320 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem1').addClass('bounceInUp')
+  },
+  offset: -340 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem2').addClass('bounceInUp')
+  },
+  offset: -360 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem3').addClass('bounceInUp')
+  },
+  offset: -380 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem4').addClass('bounceInUp')
+  },
+  offset: -400 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem5').addClass('bounceInUp')
+  },
+  offset: -420 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('equipo'),
+  handler: function() {
+   	$('.servitem6').addClass('bounceInUp')
+  },
+  offset: -440 
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('contact'),
+  handler: function() {
+   	$('#contactos').addClass('fadeInRight'),
+   	$('#contactos').css('opacity', 1)
+  },
+  offset: 500
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('contact'),
+  handler: function() {
+   	$('#contact').addClass('fadeInLeftt'),
+   	$('#contact').css('opacity', 1)
+  },
+  offset: 500 
+});
 
    $(window).scroll(function () {
        var y = $(this).scrollTop();
