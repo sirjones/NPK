@@ -189,7 +189,7 @@ var waypoint = new Waypoint({
 		  interval: 10000
 		});
 
-	if ($(window).width() < 768) {
+	if ($(window).width() < 801) {
 		tamañoGrande = false;
 	}
 	else {
@@ -212,7 +212,11 @@ var waypoint = new Waypoint({
 			  }
 		});
 	}
-
+  /*
+  if(tamañoGrande = false){
+          $('.project').removeClass("col-sm-6");
+          $('.project').removeClass("col-md-4");
+}*/
 /* FANCYBOX */
 
 $('.fancybox').fancybox({

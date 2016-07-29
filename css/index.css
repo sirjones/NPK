@@ -114,9 +114,7 @@ body {
          -o-animation: play 7s steps(95);
             animation: play 7s steps(95);
             animation-fill-mode: forwards;
-
 }
-
 
 @keyframes play {
    100% { background-position: -14823px; }
@@ -291,8 +289,8 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width:768px){
-      #bio {height: auto;}
+@media (max-width:801px){
+      #bio {height: auto; background-image: url(../img/background/biomin.jpg); }
       #videoarea, #equipo {width: 100%; padding: 3vh; float: none;}
       #titulovideo, .tarjeta, #equipo p {font-size: 0.9em;}
 }
@@ -355,7 +353,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width:768px){
+@media (max-width:801px){
   #prodserv {width:100%;}
 }
 
@@ -394,8 +392,8 @@ body {
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 768px) {
-  #sobrenpk {height: auto;}
+@media (max-width: 801px) {
+  #sobrenpk { height: auto; background-image: url(../img/background/fondob4.png); }
   .imgSobrenpk {width: 40%; margin-top: 5%;}
   .text1 {text-align: right;}
   .tsnpk {width: 100%; float: none; margin: auto;}
@@ -519,6 +517,12 @@ body {
 .galeria:hover {
   background-position: 0px 0px;
 }
+
+@media (max-width: 801px) {
+  #proyectos { height: auto; background-image: url(../img/background/fondop3min.png); }
+  .thumbnail {align-self: center;}
+}
+
 /*sección CONTACTO*******************************************************************************************/
 
 #contacto {
@@ -644,6 +648,7 @@ padding-right: 6%;
   background-position: 0px 52px;
 }
 
+
 .facebook:hover {
   background-position: 0px -3px;
 }
@@ -673,10 +678,11 @@ padding-right: 6%;
 @media (max-width: 1000px) {
   #contact-box { width: 100%;
                  margin: 0}
+  #contacto { background-image: url(../img/background/backgroundcontactmin.jpg); }
 }
 
-@media (max-width: 768px) {
-  #contacto {padding:2vh;}
+@media (max-width: 801px) {
+  #contacto {padding:2vh; height: 100vh;}
   #contactos { width: 100%;
                float: none;
                text-align: center;
