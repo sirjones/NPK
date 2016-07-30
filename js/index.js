@@ -1,6 +1,7 @@
 var tamañoGrande;
 
 $(document).ready(function() {
+  $('#intro').addClass('hi');
  	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, servitem1, servitem2, servitem3, servitem4, servitem5, servitem6, #contactos, #contact').css('opacity', 0);
 
 	$('a[rel="relativeanchor"]').click(function(){
@@ -86,7 +87,7 @@ var waypoint = new Waypoint({
   handler: function() {
    	$('.servitem2').addClass('bounceInUp')
   },
-  offset: -360 
+  offset: -340 
 });
 
 var waypoint = new Waypoint({
@@ -94,7 +95,7 @@ var waypoint = new Waypoint({
   handler: function() {
    	$('.servitem3').addClass('bounceInUp')
   },
-  offset: -380 
+  offset: -340 
 });
 
 var waypoint = new Waypoint({
@@ -102,7 +103,7 @@ var waypoint = new Waypoint({
   handler: function() {
    	$('.servitem4').addClass('bounceInUp')
   },
-  offset: -400 
+  offset: -340 
 });
 
 var waypoint = new Waypoint({
@@ -110,7 +111,7 @@ var waypoint = new Waypoint({
   handler: function() {
    	$('.servitem5').addClass('bounceInUp')
   },
-  offset: -420 
+  offset: -340 
 });
 
 var waypoint = new Waypoint({
@@ -118,7 +119,7 @@ var waypoint = new Waypoint({
   handler: function() {
    	$('.servitem6').addClass('bounceInUp')
   },
-  offset: -440 
+  offset: -340 
 });
 
 var waypoint = new Waypoint({
