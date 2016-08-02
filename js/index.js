@@ -19,18 +19,22 @@ $(document).ready(function() {
 	    return false;
 	});
 
-	$(document).ready(function(){
-	   var scroll_start = 0;
-	   var startchange = $('.nav');
-	   var offset = startchange.offset();
-	   $(document).scroll(function() {
+	$(document).ready(function () {
+  		$(".navbar-nav li a").click(function(event) {
+    		$(".navbar-collapse").collapse('hide');
+  		});
+	   	
+	   	var scroll_start = 0;
+	   	var startchange = $('.nav');
+	   	var offset = startchange.offset();
+	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#bio').offset().top - 150) {
 	        	$('.navbar-default').css('background-color', 'rgba(25, 130, 90,0.9)');
 	       } else {
 	          $('.navbar-default').css('background-color', 'transparent');
 	       }
-	   });
+	  	});
 	});
 
    $(window).scroll(function () {
