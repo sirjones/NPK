@@ -80,64 +80,9 @@ body {
   height: 50px;
 }
 
-/*sección inicio********************************************************************************************/
-#inicio {
-  position: relative;
-  min-height: 100vh;
-  background-color: #00a990;
-  background-image: url(../img/background/fondob2.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#logo {
-  position: absolute;
-  z-index: 97;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 50vh;
-}
-
-
-#intro {
-  position: absolute;
-  z-index: 97;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url('../img/background/NPKsequence2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 320px;
-  width: 156px;
-}
-
-.hi {
-    -webkit-animation: play 7s steps(95);
-       -moz-animation: play 7s steps(95);
-        -ms-animation: play 7s steps(95);
-         -o-animation: play 7s steps(95);
-            animation: play 7s steps(95);
-            animation-fill-mode: forwards;
-}
-
-@keyframes play {
-   100% { background-position: -14823px; }
-}
-
 /*sección BIO*******************************************************************************************/
 
-#bio {
-  height: 100vh;
-  background-color: #00a990;
-  background-image: url(../img/background/bio.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 4%;
-}
+
 
 #equipo {
   background-color: rgba(0, 169, 146, 0.8);
