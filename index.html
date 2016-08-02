@@ -1,28 +1,30 @@
 <!doctype html>
-
 <html>
 <head>
   <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
   <link href="https://npkartevegetal.com.ar/" rel="canonical" />
-  <meta name="description" content="Jardinería artística, paisajismo, jardines verticales">
-  <meta name="keywords" content="jardin vertical, paisajismo, paisajismo urbano, jardinería, hidroponia, jardineria artistica, argentina, capital federal">
+  <meta name="description" content="Diseño, paisajismo y jardines verticales">
+  <meta name="keywords" content="jardin vertical, paisajismo, paisajismo urbano, jardinería, hidroponia, jardineria artistica">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
+   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
   <link href="assets/css/font-awesome.css" rel="stylesheet">
-  <link href="assets/css/docs.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
   <title>NPK Arte Vegetal</title>
+  <style>
+    #inicio {position: relative; min-height: 100vh; background-color: #00a990; background-image: url('img/background/fondob2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+    #intro { position: absolute; z-index: 97; top: 50%; left: 50%; transform: translate(-50%, -50%); background-image: url('img/background/NPKsequence2.png'); background-size: cover; background-repeat: no-repeat; height: 320px; width: 156px; }
+    .hi { -webkit-animation: play 7s steps(95);  -moz-animation: play 7s steps(95); -ms-animation: play 7s steps(95); -o-animation: play 7s steps(95); animation: play 7s steps(95); animation-fill-mode: forwards; }
+    @keyframes play { 100% { background-position: -14823px; } }
+    #bio { height: 100vh; background-color: #00a990; background-image: url('img/background/bio.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 4%; }
+  </style>
 </head>
-
 <body>
   <div class="bs-example" id="nav">
     <nav role="navigation" class="navbar navbar-default">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button id="menu" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only"></span>
@@ -31,7 +33,6 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-
         <div id="navbarCollapse" class="collapse navbar-collapse" id="header">
               <ul class="nav navbar-nav navbar-right">
                 <li><a id="aInicio" href="#inicio" class="page-scroll headers" rel="relativeanchor">Inicio</a></li>
@@ -44,61 +45,55 @@
         </div>
     </nav>
   </div>
-
-    <!-- Sección Inicio -->
+    <!-- Inicio -->
     <div align="center" rel="relativeanchor" id="inicio">
-      <div id="logo">
-      <div id="intro" class="hi">
+      <div id="intro">
       </div>
     </div>
-    </div>
-    <!-- Sección Bio -->
+    <!-- Bio -->
     <div id="bio">
       <div id="videoarea" class="animated">
         <div id="titulovideo" class="animated">
         <p><span style="font-size:1.4em">npk</span> una empresa joven con el objetivo de reverdecer los espacios urbanos</p>
         </div>
-
         <div id="wrapperWrapper" class="animated">
           <div class="videoWrapper">
             <iframe width="560" height="349" src="http://www.youtube.com/embed/zOCeWGCdDh0?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-
       <div id="equipo" class="animated">
         <p>Equipo</p>
         <ul class="tarjetas">
           <li class="tarjeta">
-            <img src="img/equipo/tarjeta001.png" class="fototarjeta">
+            <img src="img/equipo/tarjeta001s.png" class="fototarjeta hvr-bob">
                 <span><b>Ivo Lucian Oxagaray</b>
                 <br>Director</span>
           </li> 
           <li class="tarjeta">
-            <img src="img/equipo/tarjeta002.png" class="fototarjeta">
+            <img src="img/equipo/tarjeta002s.png" class="fototarjeta hvr-bob">
                <span class="noil"><b>Gina Peiretti</b>
                 <br>Diseñadora</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta003.png" class="fototarjeta">
+          <img src="img/equipo/tarjeta003s.png" class="fototarjeta hvr-bob">
                 <span class="noil"><b>Camila Benavente</b>
                 <br>Arquitecta</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta004.png" class="fototarjeta">
+          <img src="img/equipo/tarjeta004s.png" class="fototarjeta hvr-bob">
                 <span class="noil"><b>Braian Oxagaray</b>
                 <br>Diseñador<br>multimedia</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta005.png" class="fototarjeta">
+          <img src="img/equipo/tarjeta005s.png" class="fototarjeta hvr-bob">
                 <span class="noil"><b>Sofia Chardin</b>
                 <br>Fotografa<br>desarrolladora web</span>
           </li>
         </ul>
       </div>
     </div>
- 
-    <!-- Sección Sobre NPK -->
+    <!-- Sobre NPK -->
     <div rel="relativeanchor" id="sobrenpk">
       <div class="row tsnpk">
         <img src="img/amorverde.png" class="imgSobrenpk animated">
@@ -112,7 +107,6 @@
           <p>Contamos con la validez y el soporte de Paisajismo Urbano, empresa líder con 10 años de experiencia en el diseño y construcción de jardines verticales en todo el mundo.</p> 
         </div>
       </div>
-
       <div class="container services">
         <div id="prodserv">
           <ul>
@@ -150,8 +144,7 @@
         </div>
       </div>
     </div>
-
-<!-- sección PROYECTOS-->
+<!-- PROYECTOS-->
 
     <div id="proyectos">
       <div id="myCarousel" class="carousel fdi-Carousel slide animated">
@@ -159,7 +152,7 @@
           <div class="item active">
             <div class="col-sm-6 col-md-4 project">
               <div class="thumbnail">
-               <img src="img/yami/NPKyami01s.png" alt="..." class="img-responsive center-block">
+               <img src="img/yami/NPKyami01s.jpg" alt="..." class="img-responsive center-block">
                <div class="caption text-center">
                  <h3>Pulmón de jardín</h3>
                  <p>Ubicado en el corazón de San Telmo, esta obra de 5m² se realizó con más de 200 plantas de 20 especies distintas.</p>
@@ -173,11 +166,10 @@
               </div>
             </div>
           </div>
-
            <div class="item">
              <div class="col-sm-6 col-md-4 project">
                <div class="thumbnail">
-                 <img src="img/roberto/alrio01s.png" alt="..." class="portrait img-responsive center-block">
+                 <img src="img/roberto/alrio01s.jpg" alt="..." class="portrait img-responsive center-block">
                    <div class="caption text-center">
                      <h3>Al río</h3>
                      <p>Jardín interior de 8m² concretado en un plazo de 3 días. Fueron plantadas más de 240 plantas.</p>
@@ -191,27 +183,25 @@
                </div>
              </div>
            </div>
-
             <div class="item">
               <div class="col-sm-6 col-md-4 project">
                 <div class="thumbnail">
-                  <img src="img/tito/tito001s.png" alt="..." class="portrait img-responsive center-block">
+                  <img src="img/tito/tito001s.jpg" alt="..." class="portrait img-responsive center-block">
                     <div class="caption text-center">
                       <h3>La familia primero</h3>
-                      <p>Tito fue de nuestros primeros mecenas y consejeros. Juntos construimos el muro vegetal de 6m² de su casa (Rosario, Santa Fé)</p>
+                      <p>Este muro vegetal de 6m² con varias especies de orquídeas y bromelias fue construído en Rosario, Santa Fe.</p>
                       <a class="fancybox btn galeria" rel="group7" href="img/tito/tito001.png"></a>
                    </div>
                 </div>
               </div>
             </div>
-
             <div class="item">
               <div class="col-sm-6 col-md-4 project">
                 <div class="thumbnail">
                   <img src="img/pj/pj1.png" alt="..." class="portrait img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Isósceles</h3>
-                      <p>Este ecosistema vertical exterior de más de 4m² fue realizado para el estudio de paisajismo Puerto Jardín en Nuñez</p>
+                      <p>Este ecosistema vertical exterior de más de 4m² fue realizado para el estudio de paisajismo Puerto Jardín.</p>
                       <a class="fancybox btn galeria" rel="group4" href="img/pj/puertojardin003.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox fancybox.iframe" rel="group4" title="Video" href="http://www.youtube.com/embed/VNnNZ3OYx-w?autoplay=1&wmode=opaque&rel=0"><img src="" alt=""/></a>
@@ -222,7 +212,6 @@
                 </div>
               </div>
             </div>
-
             <div class="item">
               <div class="col-sm-6 col-md-4 project">
                 <div class="thumbnail">
@@ -241,7 +230,7 @@
                     <img src="img/baldomero/baldomero.png" alt="..." class="img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Amigo Baldomero</h3>
-                      <p>Este jardin de 6m² vive en el living de nuestros amigos en Floresta, encuadrado con diferentes maderas recicladas.</p>
+                      <p>Este gran jardin de 6m² ubicado en Floresta fue encuadrado con diferentes maderas recicladas.</p>
                       <a class="fancybox btn galeria" rel="group5" href="img/baldomero/baldomero01.jpg"></a>
                       </div>
                     </div>
@@ -253,7 +242,7 @@
                   <img src="img/aguilera/mario.png" alt="..." class="img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Familia Aguilera</h3>
-                      <p>Este jardín vertical de interior de 4m² fue enmarcado en pinotea y cuenta con más de 250 plantas de sotobosque tropical.</p>
+                      <p>Jardin de interior de 4m² enmarcado en pinotea. Cuenta con más de 250 plantas de sotobosque tropical.</p>
                       <a class="fancybox btn galeria" rel="group3" href="img/aguilera/mario001.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group3" title="" href="img/aguilera/mario002.jpg"></a>
@@ -286,7 +275,7 @@
                   <img src="img/muñiz/muñiz001s.png" alt="..." class="img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Hogar, dulce laboratorio</h3>
-                      <p>Nuestro primer jardín vertical experimental, realizado en su mayoría con materiales reciclados. Boedo, 2012.</p>
+                      <p>Nuestro primer jardín vertical experimental, realizado en su mayoría con materiales reciclados.</p>
                       <a class="fancybox btn galeria"  rel="group1" href="img/muñiz/muñiz001.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group1" title="" href="img/muñiz/muñiz002.jpg"></a>
@@ -318,7 +307,7 @@
                   <img src="img/nqn/nqn2.png" alt="..." class="img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Alto Valle</h3>
-                      <p>Más de 10m² de imponente vegetación habitan la pared que conecta los dos pisos del hogar en la Ciudad de Neuquén.</p>
+                      <p>Más de 10m² de vegetación habitan la pared que conecta los dos pisos del hogar en la Ciudad de Neuquén.</p>
                       <a class="fancybox btn galeria"  rel="group11" title="Un jardín en doble altura." href="img/nqn/nqn2b.png"></a>
                       <div class="hidden">
                         <a class="fancybox" rel="group11" title="" href="img/nqn/nqn1.png"></a>
@@ -338,7 +327,7 @@
                   <img src="img/resto/devotos.png" alt="..." class="img-responsive center-block">
                     <div class="caption text-center">
                       <h3>Pil-Pil</h3>
-                      <p>Este particular jardín fue realizado en 2014 para el restaurante Pil-Pil ubicado en Villa Devoto (Ciudad de Buenos Aires)</p>
+                      <p>Este particular jardín ubicado en Villa Devoto fue realizado en 2014 para el restaurante Pil-Pil.</p>
                       <a class="fancybox btn galeria"  rel="group12" title="" href="img/resto/devoto.jpg"></a>
                       <div class="hidden">
                       </div>
@@ -347,8 +336,7 @@
               </div>
             </div>
            </div>
-
-          </div><!--/carousel-inner-->
+          </div>
 
               <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -360,7 +348,6 @@
               </a>
         </div>
       </div>
-
     <!-- Contacto -->
       <div id="contacto" rel="relativeanchor">
         <div id="contactos" rel="relativeanchor" class="animated">
@@ -388,16 +375,12 @@
                     <a href="https://www.linkedin.com/company/npk-arte-vegetal?trk=top_nav_home" target="_blank" class="btn linkedin swing"></a>
                 </li>
             </ul>
-
         </div>
-
- <!-- Contact Section -->
+ <!-- Contact Form -->
     <section id="contact" class="animated">
         <div class="container">
             <div class="contact-box row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -439,52 +422,17 @@
                           <button type="submit" class="btn btn-send btn-success btn-lg">Enviar</button>
                          </div>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-  <!-- jQuery -->
   <script src="js/jquery.js"></script>
-  <!-- Fancybox -->
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
-  <!-- Optionally add helpers - button, thumbnail and/or media -->
-  <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-buttons.js"></script>
-  <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-media.js"></script>
-  <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
-  <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-  <script src="js/noframework.waypoints.min.js"></script>
-  <!-- Javascript -->
   <script type="text/javascript" src="js/index.js"></script>
-  <!-- Contact Form JavaScript -->
   <script src="js/contact_me.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
-  <!-- Start of StatCounter Code for Default Guide -->
-  <script type="text/javascript">
-  var sc_project=11049991; 
-  var sc_invisible=1; 
-  var sc_security="10f8c238"; 
-  var scJsHost = (("https:" == document.location.protocol) ?
-  "https://secure." : "http://www.");
-  document.write("<sc"+"ript type='text/javascript' src='" +
-  scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="shopify
-  analytics ecommerce tracking"
-  href="http://statcounter.com/shopify/" target="_blank"><img
-  class="statcounter"
-  src="//c.statcounter.com/11049991/0/10f8c238/1/"
-  alt="shopify analytics ecommerce
-  tracking"></a></div></noscript>
-  <!-- End of StatCounter Code for Default Guide -->
 </body>
 </html>
