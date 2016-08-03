@@ -4,11 +4,11 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-size: 1.5em;
   line-height: 170%;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Droid Sans', sans-serif;
   overflow-x: hidden;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .headers {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .activo {
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar {
-  color: #FFFFFF;
+  color: #fff;
   border: none;
   margin:0px;
   border:none;
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-default {
-  color: #FFFFFF;
+  color: #fff;
   background-color: transparent;
   margin: 0px;
   border:none;
@@ -205,7 +205,7 @@ body {
   margin-left: 3%;
   border-radius: 10px;
   padding: 2%;
-  color: #ffffff;
+  color: #fff;
 
 }
 .text1 p {
@@ -258,7 +258,7 @@ body {
     padding-top: 2%;
     padding-bottom:1%;
     margin-bottom: 10vh;
-    color: #ffffff;
+    color: #fff;
     font-size: 1em;
 }
 
@@ -569,7 +569,7 @@ padding-right: 6%;
 
 /*BTNS*/
 a:focus {color: #00a990;outline: none;}
-a:blur {color: #ffffff;}
+a:blur {color: #fff;}
 section {padding: 100px 0;}
 section h2 {margin: 0; font-size: 3em;}
 section.success {background: #18bc9c; color: white;}
