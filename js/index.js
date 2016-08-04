@@ -30,9 +30,9 @@ $(document).ready(function() {
 	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#bio').offset().top - 150) {
-	        	$('.navbar-default').css('background-color', 'rgba(25, 130, 90,0.9)');
+	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)');
 	       } else {
-	          $('.navbar-default').css('background-color', 'transparent');
+	          $('#nav').css('background-color', 'transparent');
 	       }
 	  	});
 	});

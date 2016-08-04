@@ -10,7 +10,8 @@ RewriteBase /
       text/html                      \
       text/javascript                \
       text/plain                     \
-      text/xml
+      text/xml						 \
+      image/svg+xml
 </IfModule>
 # Con especificamos cache
 <IfModule mod_expires.c>

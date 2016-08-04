@@ -239,24 +239,8 @@
 	white-space: nowrap;
 }
 
-.fancybox-title-outside-wrap {
-	position: relative;
-	margin-top: 10px;
-	color: #fff;
-}
-
 .fancybox-title-inside-wrap {
 	padding-top: 10px;
-}
-
-.fancybox-title-over-wrap {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	padding: 10px;
-	background: #000;
-	background: rgba(0, 0, 0, .8);
 }
 
 /*Retina graphics!*/
