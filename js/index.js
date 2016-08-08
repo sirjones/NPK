@@ -1,4 +1,8 @@
 var tamañoGrande;
+window.addEventListener("orientationchange", function() {
+	// Announce the new orientation number
+	alert(screen.orientation);
+}, false);
   // Start of StatCounter Code for Default Guide
   var sc_project=11049991; 
   var sc_invisible=1; 
@@ -11,7 +15,7 @@ var tamañoGrande;
     // End of StatCounter Code for Default Guide 
 $(document).ready(function() {
   $('#intro').addClass('hi');
- 	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, servitem1, servitem2, servitem3, servitem4, servitem5, servitem6, #contactos, #contact').css('opacity', 0);
+ 	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, #contactos, #contact').css('opacity', 0);
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
@@ -19,10 +23,9 @@ $(document).ready(function() {
 	    return false;
 	});
 
-	$(document).ready(function () {
-  		$(".navbar-nav li a").click(function(event) {
+  		$(".nav-navbar li a").click(function(event) {
     		$(".navbar-collapse").collapse('hide');
-  		});
+    	});
 	   	
 	   	var scroll_start = 0;
 	   	var startchange = $('.nav');
@@ -30,9 +33,9 @@ $(document).ready(function() {
 	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#bio').offset().top - 150) {
-	        	$('.navbar-default').css('background-color', 'rgba(25, 130, 90,0.9)');
+	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)');
 	       } else {
-	          $('.navbar-default').css('background-color', 'transparent');
+	          $('#nav').css('background-color', 'transparent');
 	       }
 	  	});
 	});
@@ -131,5 +134,5 @@ $('.fancybox').fancybox({
 			  	},
 		 },
 	 });
-});
+
 
