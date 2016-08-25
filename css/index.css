@@ -6,6 +6,7 @@
   font-family: droid;
   src: url("../fonts/DroidSans.ttf");
 }
+
 body {
   background-color: #fff;
   font-size: 1em;
@@ -1041,7 +1042,10 @@ a.thumbnail.active {
   margin-left: -10px;
 }
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .glyphicon-chevron-left {
+    height: 30px;
+    width: 30px;
   right: 50%;
   margin-right: -10px;
 }
