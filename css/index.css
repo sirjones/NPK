@@ -552,8 +552,8 @@ button {
   background-color: rgba(0, 169, 146, 0.8);
   border-radius:10px;
   padding: 1%;
-  height: 73vh;
-  width: 20%;
+  overflow:auto; 
+  width: 30vw;
 }
 
 #equipo p {
@@ -567,7 +567,7 @@ button {
   float: left;
   list-style-type: none;
   padding: 0;
-  height: 90%;
+  height: auto;
   width: 100%;
   margin-top:8%;
   padding-left: 20px;
@@ -584,7 +584,7 @@ button {
 }
 
 .tarjeta {
-  height: 20%;
+  height: 16vh;
   font-size: 0.9em;
   transition:all 0.3s ease;
 }
@@ -636,10 +636,18 @@ button {
   border-radius: 5px;
 }
 
-@media (max-width:801px){
+@media (max-width:840px){
       #bio {height: auto; background-image: url(../img/background/biomin.jpg);}
       #videoarea, #equipo {width: 90%; padding: 1vh; float: none; margin: auto;}
-      #titulovideo, .tarjeta, #equipo p {font-size: 0.9em;}
+      #titulovideo, .tarjeta  {font-size: 0.9em;}
+      .fototarjeta {height: 80%;}
+      .tarjeta, #equipo p {font-size: 3.5vw;}
+}
+@media (min-width: 850px){
+    .tarjeta {height: 13vh;}
+}
+@media (min-width:1350px){
+      #equipo {width: 20vw;}
 }
 
 /*sección Sobre NPK*******************************************************************************************/
