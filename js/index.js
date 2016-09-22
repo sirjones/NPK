@@ -1,5 +1,8 @@
 var tamañoGrande;
-/*window.addEventListener("orientationchange", function() {	alert(screen.orientation); }, false);*/
+window.addEventListener("orientationchange", function() {	 
+	$(".thumbnail").css({'height':'auto'});
+	$(".thumbnail").css({'height':($("#thumb").height()+'px')});
+}, false);
 // Start of StatCounter Code for Default Guide 
 var sc_project=11049991; 
 var sc_invisible=1; 
@@ -13,6 +16,7 @@ scJsHost+
 
 $(document).ready(function() {
   $('#intro').addClass('hi');
+  $(".thumbnail").css({'height':($("#thumb").height()+'px')});
  	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, #contactos, #contact').css('opacity', 0);
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
@@ -126,6 +130,7 @@ $(document).ready(function() {
 	}
 
 $('.fancybox').fancybox({
+	     loop : false,
 		 helpers : {
 			  title : {
 			   type : 'inside'
