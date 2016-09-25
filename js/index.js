@@ -47,7 +47,7 @@ $(document).ready(function() {
        var a = $('#inicio').offset().top;
        var b = $('#bio').offset().top -200;
        var c = $('#sobrenpk').offset().top -200;
-	   var d = $('#proyectos').offset().top -200;
+	   var d = $('#jardines').offset().top -200;
 	   var e = $('#contacto').offset().top -200;
 
     if (y >= a) {
@@ -82,7 +82,7 @@ $(document).ready(function() {
 	if (y >= d) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
 		  $('#navbarCollapse ul li a').blur();
-			    $('#aProyectos').addClass('activo');
+			    $('#aJardines').addClass('activo');
 			 }
 
 	if (y >= e) {

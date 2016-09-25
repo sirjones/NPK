@@ -13,7 +13,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #fff;
 }
-
+a {
+  text-decoration: none;
+  color: #fff;
+}
 @font-face {
   font-family: droid;
   src: url("../fonts/DroidSans.ttf");
@@ -28,8 +31,8 @@ body {
   font-family: droid;
   overflow-x: hidden;
   margin: 0;
-
 }
+
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
@@ -258,7 +261,7 @@ fieldset[disabled] .btn-success.focus {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -294,7 +297,7 @@ fieldset[disabled] .btn-success.focus {
 .navbar-collapse.in {
     overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar-toggle{
     display: none;
   }
@@ -350,7 +353,7 @@ tbody.collapse.in {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-collapse {
     width: auto;
     padding: 0;
@@ -396,7 +399,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -436,7 +439,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -656,6 +659,10 @@ button {
       .fototarjeta {height: 80%;}
       .tarjeta, #equipo p {font-size: 3.5vw;}
 }
+@media (min-width:840px) and (max-width: 1200px){
+      #PUimg {width: 70%;}
+}
+
 @media (min-width: 850px){
     .tarjeta {height: 13vh;}
 }
@@ -754,7 +761,7 @@ button {
   display: none;
 }
 /* CAROUSEL */
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; margin-top: 10vh;}
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; margin-top: 15vh; margin-bottom: 5vh;}
 .onebyone-carosel .active.left { left: -33.33%; }
 .onebyone-carosel .active.right { left: 33.33%; }
 .onebyone-carosel .next { left: 33.33%; }
@@ -774,6 +781,7 @@ button {
 #myCarousel {
   width: 90%;
   margin: auto;
+  vertical-align: middle;
 }
 
 .onebyone-carosel {
@@ -874,23 +882,8 @@ a.thumbnail.active {
   margin-bottom: 0;
 }
 
-.galeria {
-  /*
-  position: relative;
-  margin-left: 70%;
-  margin-bottom: 3%;
-  height: 53px;
-  width: 58px;
-  background-image: url(../img/galeriab-12.png);
-  background-position: 0px 53px;*/
-}
-
-.galeria:hover {
-  background-position: 0px 0px;
-}
-
 @media (max-width: 801px) {
-  #proyectos { height: auto; background-image: url(../img/background/fondop3min.png); }
+  #jardines { height: auto; background-image: url(../img/background/fondop3min.png); }
   .project {width: 90%; margin: auto; float: none;}
   .item, .item .active, .thumbnail {margin: auto;}
 }
@@ -1206,7 +1199,7 @@ a.thumbnail.active {
 }
 .contact-box {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     font-size: 0.6em;
     float: left;
     border-radius: 10px;
@@ -1221,11 +1214,9 @@ form {
     display: block;
     margin-top: 0em;
 }
-form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #aaa;
-}
-.floating-label-form-group:not(:first-child) {padding-left: 14px; border-left: 1px solid #aaa;}
-.floating-label-form-group {position: relative;padding-right: 15px;padding-left: 15px;margin-bottom: 15px; border-bottom: 1px solid #aaa;min-height: 1px;}
+
+.floating-label-form-group:not(:first-child) {padding-left: 14px; border-left: 1px solid rgba(255, 255, 255, 0.2);}
+.floating-label-form-group {position: relative;padding-right: 15px;padding-left: 15px;margin-bottom: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);min-height: 1px;}
     .floating-label-form-group label {
     display: block;
     z-index: 0;
