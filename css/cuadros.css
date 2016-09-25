@@ -14,7 +14,7 @@ body {
 }
 p small {
   font-size:0.9em; 
-  text-shadow:none;"
+  text-shadow:none;
 }
 #cuadrosvivos {
   height: 94vh;
@@ -100,32 +100,35 @@ h1 {
   display: none;
   cursor: pointer;
   z-index: 150;
-  right: 28%;
-  top: 20%;
+  top: -28px;
+  left: 95%;
   background-image: url(../img/x.png);
   width: 28px;
   height: 28px;
 }
 
-#imgmant {
+#mant{
   position: fixed;
   display: none;
   top: 55%; 
   left: 50%; 
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%); 
   z-index: 99;
-  height: 70vh;
+  height: 80vh;
   border: solid #fff 10px;
 }
+#imgmant { 
+    height: 100%;
+}
 #closeimg {
-  position: fixed;
+  position: absolute;
   background-color: transparent;
-  display: none;
   border: none;
+  display: none;
   cursor: pointer;
   z-index: 150;
-  right: 5%;
-  top: 5%;
+  top: -38px;
+  left: 102%;
   background-image: url(../img/x.png);
   width: 28px;
   height: 28px;
@@ -386,6 +389,9 @@ fieldset[disabled] .btn-success.focus {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
+  #mant{
+      height: 60vh;
+  }
 }
 @media (min-width: 767px) {
   .navbar-nav {
@@ -645,26 +651,6 @@ tbody.collapse.in {
   clear: both;
 }
 
-input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
-    padding: 1px 6px;
-}
-input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    color: buttontext;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    background-color: buttonface;
-    box-sizing: border-box;
-    padding: 2px 6px 3px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
-}
 input, textarea, keygen, select, button {
     text-rendering: auto;
     color: initial;
@@ -885,8 +871,11 @@ height: 100%;
 width: 100%;
 }
 
+@media (max-width: 321px) {
+    #contact { top:60%;}
+}
 @media (max-width: 768px) {
-  #contact { width: 90%; float: none; margin: auto; right: 0; margin-bottom: 5%;}
+  #contact { top:60%; width: 90%; float: none; margin: auto; right: 0; margin-bottom: 5%;}
   .contact-box{}
   .container{padding: 0; margin: auto;}
   #spam-advice {max-width: 65%;}
@@ -894,7 +883,7 @@ width: 100%;
 }
 
 @media (max-height: 500px) and (max-width: 750px) {
-  #contact { position: absolute; width: 90vh; top: 100%; left: 50%; transform: translate(-50%, -50%);}
+  #contact { position: absolute; width: 90vh; top: 60%; left: 50%; transform: translate(-50%, -50%);}
 }
 
 

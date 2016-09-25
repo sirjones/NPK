@@ -100,14 +100,14 @@
     document.getElementById('contact').style.display = 'block';
     document.getElementById('close').style.display = 'block';
     $('lSPrev').style.display = 'none';
-    $('#imgmant').style.display = 'none';
+    $('#mant').style.display = 'none';
     document.getElementById('closeimg').style.display = 'none';
   };
 
   function showMant() {
     $('.blurc').addClass('blur');
     document.getElementById('closeimg').style.display = 'block';
-    document.getElementById('imgmant').style.display = 'block';
+    document.getElementById('mant').style.display = 'block';
     $('lSPrev').style.display = 'none';
     document.getElementById('close').style.display = 'none';
   };
@@ -117,6 +117,6 @@
     document.getElementById('close').style.display = 'none';
     document.getElementById('closeimg').style.display = 'none';
     document.getElementById('contact').style.display = 'none';
-    document.getElementById('imgmant').style.display = 'none';
+    document.getElementById('mant').style.display = 'none';
     $('lSPrev').style.display = 'block';
   };

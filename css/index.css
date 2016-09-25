@@ -657,7 +657,10 @@ button {
       #videoarea, #equipo {width: 90%; padding: 1vh; float: none; margin: auto;}
       #titulovideo, .tarjeta  {font-size: 0.9em;}
       .fototarjeta {height: 80%;}
-      .tarjeta, #equipo p {font-size: 3.5vw;}
+      .tarjeta, #equipo p {font-size: 2.5vw;}
+}
+@media (max-width:430px){
+    .tarjeta, #equipo p {font-size: 3.8vw;}
 }
 @media (min-width:840px) and (max-width: 1200px){
       #PUimg {width: 70%;}
