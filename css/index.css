@@ -796,7 +796,7 @@ button {
 }
 .project {
   padding: 0;
-  margin: 2vh;
+  margin: 2vh 1vw 2vh 1vw;
   float: left;
   width: 30%;
 }
