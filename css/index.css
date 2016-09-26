@@ -1179,6 +1179,19 @@ a.thumbnail.active {
   text-align: right;
   color: white;
 }
+.icontact {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+#contactos p {
+  margin-left: 6px;
+  font-weight: 700;
+  letter-spacing: 0.08em; 
+  text-shadow:none;
+}
+
 .twitter { width: 56px; height: 52px; background-image: url(../img/btnsocialb-10.png);  background-position: 0px 52px; }
 .twitter:hover { background-position: 0px -3px; }
 .facebook { width: 56px; height: 52px; background-image: url(../img/btnsocialb-09.png); background-position: 0px 52px; }

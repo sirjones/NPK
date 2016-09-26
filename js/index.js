@@ -1,8 +1,5 @@
 var tamañoGrande;
-window.addEventListener("orientationchange", function() {	 
-	$(".thumbnail").css({'height':'auto'});
-	$(".thumbnail").css({'height':($("#thumb").height()+'px')});
-}, false);
+
 // Start of StatCounter Code for Default Guide 
 var sc_project=11049991; 
 var sc_invisible=1; 
