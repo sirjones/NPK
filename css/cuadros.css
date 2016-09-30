@@ -17,7 +17,7 @@ p small {
   text-shadow:none;
 }
 #cuadrosvivos {
-  height: 94vh;
+  height: 90vh;
   padding-top: 48px;
   background-color: #00a990; 
   background-image: url(../img/background/fondob2b.png);
@@ -25,6 +25,7 @@ p small {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+  padding-bottom: 4vh;
 }
 #cuadrosimg {
   vertical-align: middle;
@@ -36,23 +37,42 @@ p small {
   position: relative;
   width: 65vh;
   left: 15vh;
-  top: 8vh;
+  top: 6vh;
+}
+
+#cuadrosText p small {
+  display: block;
+  text-align: justify;
 }
 h1 {
   font-size: 2.2em;
 }
+big {
+  position: relative;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 6vh;
+  text-align: center;
+  font-weight: bold;
+}
+#btnsc {
+  display: block;
+  text-align: center;
+}
+#btnsc a {
+  text-decoration: none;
+}
 #cuadrosText p {
   text-shadow:-2px -2px 0 #00a990, 2px -2px 0 #00a990, -2px 2px 0 #00a990, 2px 2px 0 #00a990
-}
-.pedido {
-    font-weight: bold;
 }
 .guia, .pedido {
   margin-top: 2vh;
   margin-right: 2vh;
+  font-weight: bold;
+
 }
 #contactos {
-  margin-top: 25vh;
+  margin-top: 15vh;
   margin-left: 15vh;
 }
 
@@ -146,17 +166,19 @@ h1 {
   text-shadow:none;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 800px) {
   #cuadrosvivos {height: auto;}
   #cuadrosText, #gallery {position: relative; width: 90%; left:0; top:0; right:none; margin:auto;}
-  #cuadrosText h1 {font-size: 1.6em;}
+  #cuadrosText {padding-top: 3vh; padding-bottom: 4vh;}
+  big {font-size: 1em;}
+  #btnsc {padding-top: 0;}
+  #cuadrosText h1 {font-size: 1.5em;}
+  #cuadrosimg { width: 50px;}
   #cuadrosText p {font-size: 0.9em; line-height: 160%; }
   #cuadrosText p small {font-size: 0.8em; line-height: 150%;}
   #contactos {text-align: center; margin: 0vh;margin-top: 4vh; padding-bottom: 2vh;}
-  #gallery {margin-top: 4vh;}
   .imgGallery {height: 36vh;}
 }
-
 
 
 
@@ -215,28 +237,28 @@ h1 {
 
 .btn-success {
  padding: 6px 12px;
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  color: #00a990;
+  background-color: #fff;
+  border-color: transparent;
   border-radius: 4px;
 }
 .btn-success:focus,
 .btn-success.focus {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #eee;
 }
 .btn-success:hover {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #eee;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #eee;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -248,8 +270,8 @@ h1 {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+  background-color: #00a990;
+  border-color: #eee;
 }
 .btn-success:active,
 .btn-success.active,
@@ -265,11 +287,11 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #fff;
+  border-color: transparent;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #00a990;
   background-color: #fff;
 }
 /*barra menú*/
@@ -926,6 +948,7 @@ width: 100%;
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
+button:focus,
+button:active {
     outline: none;
 }

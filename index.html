@@ -7,6 +7,7 @@
   <meta name="keywords" content="jardin vertical, paisajismo, paisajismo urbano, jardinería, hidroponia, jardineria artistica">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/lightslider.css">
   <link rel="stylesheet" href="css/index.css">
   <title>NPK Arte Vegetal</title>
   <style>
@@ -37,7 +38,7 @@
                 <li><a id="aBio" href="#bio" class="page-scroll headers" rel="relativeanchor">Bio</a></li>
                 <li><a id="aSobrenpk" href="#sobrenpk" class="page-scroll headers" rel="relativeanchor">Sobre NPK</a></li>
                 <li><a id="aJardines" href="#jardines" class="page-scroll headers" rel="relativeanchor">Jardines</a></li>
-                <li><a id="aCuadros" href="cuadros.html" class="page-scroll headers" rel="relativeanchor">Cuadros Vivos</a></li>
+                <li><a id="aCuadrosvivos" href="#cuadrosvivos" class="page-scroll headers" rel="relativeanchor">Cuadros Vivos</a></li>
                 <li><a id="aContacto" href="#contacto" class="page-scroll headers" rel="relativeanchor">Contacto</a>
                 </li>
               </ul>
@@ -333,7 +334,6 @@
                         <a class="fancybox" rel="group11" title="" href="img/nqn/nqn6.png"></a>
                         <a class="fancybox" rel="group11" title="NPK agradece infinitamente a la familia Oxagaray-Bedini por toda la ayuda los consejos y el acompañamiento." href="img/nqn/nqn7.png"></a>
                         <a class="fancybox fancybox.iframe" rel="group11" title="Video" href="http://www.youtube.com/embed/-G7yFCq8Cg4?autoplay=1&wmode=opaque&rel=0"><img src="" alt=""/></a>
-
                       </div>
                     </div>
                 </div>
@@ -385,6 +385,61 @@
               </a>
             </div>
         </div>
+    <!-- Cuadros Vivos -->
+  <div id="cuadrosvivos">
+    <div class="blurc">
+      <section id="cuadrosText">
+          <h1><img id="cuadrosimg" src="img/cuadrosicon.svg">Cuadros Vivos</h1>
+          <p><br>Estos jardines verticales son una alternativa accesible de simple instalación y mínimo mantenimiento que embellecen los ambientes.
+          <br><br>
+          <small>De suculentas, aromáticas o plantas ornamentales. Medidas estándar: 10x15, 20x30 y 30x40cm. Realizamos cuadros especiales por encargo.</small></p>
+        <div id="btnsc"><button class="guia btn btn-success" onClick="showMant()">Guía de mantenimiento</button>
+        <a class="pedido btn btn-success" href="#contacto" rel="relativeanchor">Realizar pedido</a></div>
+        <big>Se adaptan a todos los espacios por su compacto y natural diseño. </big>
+      </section>
+      <section id="gallery">
+        <ul id="imageGallery">
+          <li data-thumb="img/cuadritos/c1t.jpg" data-src="img/cuadritos/c1t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c1.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c2t.jpg" data-src="img/cuadritos/c2t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c2.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c3t.jpg" data-src="img/cuadritos/c3t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c3.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c8t.jpg" data-src="img/cuadritos/c8t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c8.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c9t.jpg" data-src="img/cuadritos/c9t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c9.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c10t.jpg" data-src="img/cuadritos/c10t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c10.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c11t.jpg" data-src="img/cuadritos/c11t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c11.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c6t.jpg" data-src="img/cuadritos/c6t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c6.jpg"/>
+          </li>
+            <li data-thumb="img/cuadritos/c7t.jpg" data-src="img/cuadritos/c7t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c7.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c12t.jpg" data-src="img/cuadritos/c12t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c12.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c13t.jpg" data-src="img/cuadritos/c13t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c13.jpg"/>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="mant">
+      <button id="closeimg" onClick="closePop()"></button>
+      <img id="imgmant" src="img/cuadritos/mantenimiento.jpg">
+    </div>
+  </div>
     <!-- Contacto -->
       <div id="contacto" rel="relativeanchor">
         <div id="contactos" rel="relativeanchor" class="animated">
@@ -469,6 +524,7 @@
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lightslider.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script src="js/contact_me.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>

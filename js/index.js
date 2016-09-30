@@ -32,11 +32,27 @@ $(document).ready(function() {
 	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#bio').offset().top - 150) {
-	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)');
+	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)'),
+	        	$('.navbar-header').css('background-color', 'rgb(25, 130, 90)');
 	       } else {
 	          $('#nav').css('background-color', 'transparent');
 	       }
 	  	});
+
+	    $('#imageGallery').lightSlider({
+	        gallery:true,
+	        item:1,
+	        loop:true,
+	        thumbItem:10,
+	        slideMargin:0,
+	        enableDrag: false,
+	        currentPagerPosition:'left',
+	        onSliderLoad: function(el) {
+	            el.lightGallery({
+	                selector: '#imageGallery .lslide'
+	            });
+	        }   
+	    }); 
 	});
 
    $(window).scroll(function () {
@@ -45,7 +61,8 @@ $(document).ready(function() {
        var b = $('#bio').offset().top -200;
        var c = $('#sobrenpk').offset().top -200;
 	   var d = $('#jardines').offset().top -200;
-	   var e = $('#contacto').offset().top -200;
+	   var e = $('#cuadrosvivos').offset().top -200;
+	   var f = $('#contacto').offset().top -200;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
@@ -83,6 +100,12 @@ $(document).ready(function() {
 			 }
 
 	if (y >= e) {
+		  $('#navbarCollapse ul li a').removeClass('activo');
+		  $('#navbarCollapse ul li a').blur();
+			    $('#aCuadrosvivos').addClass('activo');
+			 }
+
+	if (y >= f) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
 		  $('#navbarCollapse ul li a').blur();
 				$('#aContacto').addClass('activo');
@@ -134,3 +157,19 @@ $('.fancybox').fancybox({
 			  	},
 		 },
 	 });
+
+  function showMant() {
+    $('.blurc').addClass('blur');
+    document.getElementById('closeimg').style.display = 'block';
+    document.getElementById('mant').style.display = 'block';
+    $('lSPrev').style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+  };
+
+  function closePop() {
+    $('.blurc').removeClass('blur');
+    document.getElementById('mant').style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
+    $('lSPrev').style.display = 'block';
+  };

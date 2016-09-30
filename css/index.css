@@ -60,6 +60,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   border: 1px solid transparent;
+  font-weight: bold;
 }
 .btn:focus,
 .btn:active:focus,
@@ -86,28 +87,28 @@ body {
 
 .btn-success {
  padding: 6px 12px;
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  color: #00a990;
+  background-color: #fff;
+  border-color: transparent;
   border-radius: 4px;
 }
 .btn-success:focus,
 .btn-success.focus {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #eee;
 }
 .btn-success:hover {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #00a990;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  color: #00a990;
+  background-color: #fff;
+  border-color: #eee;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -119,8 +120,8 @@ body {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+  background-color: #00a990;
+  border-color: #eee;
 }
 .btn-success:active,
 .btn-success.active,
@@ -136,11 +137,11 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #fff;
+  border-color: transparent;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #00a990;
   background-color: #fff;
 }
 /*barra menú*/
@@ -392,6 +393,7 @@ tbody.collapse.in {
     max-height: 200px;
   }
 }
+
 .container > .navbar-header,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
@@ -1159,6 +1161,153 @@ a.thumbnail.active {
 .fancybox-prev span {
  left: 20px;
 }
+/************************************************************CUADROS VIVOS***************************************************************/
+p small {
+  font-size:0.9em; 
+  text-shadow:none;
+}
+
+#cuadrosvivos {
+  height: 94vh;
+  background-color: #00a990; 
+  background-image: url(../img/background/fondob2b.png);
+  background-opacity: 0.1;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding-bottom: 4vh;
+}
+#cuadrosimg {
+  vertical-align: middle;
+  margin-right: 15px;
+  height: 60px;
+}
+
+#cuadrosText {
+  position: absolute;
+  width: 60vh;
+  left: 15vh;
+  padding-top: 6vh;
+}
+#cuadrosText p small {
+  display: block;
+  text-align: justify;
+}
+
+big {
+  position: relative;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 6vh;
+  text-align: center;
+  font-weight: bold;
+}
+#cuadrosvivos h1 {
+  display: block;
+  font-size: 2.2em;
+  margin-right: 60px;
+}
+#cuadrosText p {
+  text-shadow:-2px -2px 0 #00a990, 2px -2px 0 #00a990, -2px 2px 0 #00a990, 2px 2px 0 #00a990;
+    display: block;
+}
+.guia, .pedido {
+  margin-top: 2vh;
+  margin-right: 2vh;
+}
+#btnsc {
+  display: block;
+  text-align: center;
+  padding-top: 2vh;
+}
+#btnsc a {
+  text-decoration: none;
+}
+#gallery {
+  position: absolute;
+  left: 50%;  
+  width: 84vh;
+  margin-top: 6vh;
+  background-color: rgba(25, 130, 90,0.8);
+  padding: 2vh;
+  border-radius: 5px;
+}
+.imgGallery {
+  height: 60vh;
+  width: auto;
+  margin: auto;
+  margin-bottom: 2vh;
+  display: block;
+  text-align: center;
+  background-color: white;
+  padding: 2%;
+  padding-bottom: 6%;
+}
+.blur {
+  transition: 0.3s -webkit-filter linear;
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+#close {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+  z-index: 150;
+  top: -28px;
+  left: 95%;
+  background-image: url(../img/x.png);
+  width: 28px;
+  height: 28px;
+}
+
+#mant{
+  position: fixed;
+  display: none;
+  top: 55%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 99;
+  height: 60vh;
+  border: solid #fff 10px;
+}
+#imgmant { 
+    height: 100%;
+}
+#closeimg {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+  z-index: 150;
+  top: -38px;
+  left: 102%;
+  background-image: url(../img/x.png);
+  width: 28px;
+  height: 28px;
+}
+#cuadrosText button, #cuadrosText a {
+  font-size: 0.9em;
+}
+@media (max-width: 800px) {
+  #cuadrosvivos {height: auto;}
+  #cuadrosText, #gallery {position: relative; width: 90%; left:0; top:0; right:none; margin:auto;}
+  #cuadrosText {padding-top: 3vh; padding-bottom: 4vh;}
+  big {font-size: 1em;}
+  #btnsc {padding-top: 0;}
+  #cuadrosText h1 {font-size: 1.5em;}
+  #cuadrosimg { width: 50px;}
+  #cuadrosText p {font-size: 0.9em; line-height: 160%; }
+  #cuadrosText p small {font-size: 0.8em; line-height: 150%;}
+  #contactos {text-align: center; margin: 0vh;margin-top: 4vh; padding-bottom: 2vh;}
+  .imgGallery {height: 36vh;}
+}
+
 /*sección CONTACTO*******************************************************************************************/
 #tituloContacto {
   position: relative;
@@ -1304,6 +1453,14 @@ p {
 
 .btn-send {
   float: right;
+  background-color:#00a990;
+  color:#fff;
+  border: solid 1px transparent;
+}
+.btn-send:hover {
+  background-color:#00a990;
+  color:#fff;
+  border: solid 1px #009280;
 }
 #spam-advice {
   float: left;
