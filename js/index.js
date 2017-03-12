@@ -1,5 +1,5 @@
 var tamañoGrande;
-/*window.addEventListener("orientationchange", function() {	alert(screen.orientation); }, false);*/
+
 // Start of StatCounter Code for Default Guide 
 var sc_project=11049991; 
 var sc_invisible=1; 
@@ -13,6 +13,7 @@ scJsHost+
 
 $(document).ready(function() {
   $('#intro').addClass('hi');
+  $(".thumbnail").css({'height':($("#thumb").height()+'px')});
  	$('#equipo, #titulovideo, #wrapperWrapper, #titulovideo, .imgSobrenpk, .text1, .textPU, #contactos, #contact').css('opacity', 0);
 	$('a[rel="relativeanchor"]').click(function(){
 			$('html, body').animate({
@@ -31,11 +32,27 @@ $(document).ready(function() {
 	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > $('#bio').offset().top - 150) {
-	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)');
+	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)'),
+	        	$('.navbar-header').css('background-color', 'rgb(25, 130, 90)');
 	       } else {
 	          $('#nav').css('background-color', 'transparent');
 	       }
 	  	});
+
+	    $('#imageGallery').lightSlider({
+	        gallery:true,
+	        item:1,
+	        loop:true,
+	        thumbItem:10,
+	        slideMargin:0,
+	        enableDrag: false,
+	        currentPagerPosition:'left',
+	        onSliderLoad: function(el) {
+	            el.lightGallery({
+	                selector: '#imageGallery .lslide'
+	            });
+	        }   
+	    }); 
 	});
 
    $(window).scroll(function () {
@@ -43,8 +60,9 @@ $(document).ready(function() {
        var a = $('#inicio').offset().top;
        var b = $('#bio').offset().top -200;
        var c = $('#sobrenpk').offset().top -200;
-	   var d = $('#proyectos').offset().top -200;
-	   var e = $('#contacto').offset().top -200;
+	   var d = $('#jardines').offset().top -200;
+	   var e = $('#cuadrosvivos').offset().top -200;
+	   var f = $('#contacto').offset().top -200;
 
     if (y >= a) {
           $('#navbarCollapse a').removeClass('activo');
@@ -78,10 +96,16 @@ $(document).ready(function() {
 	if (y >= d) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
 		  $('#navbarCollapse ul li a').blur();
-			    $('#aProyectos').addClass('activo');
+			    $('#aJardines').addClass('activo');
 			 }
 
 	if (y >= e) {
+		  $('#navbarCollapse ul li a').removeClass('activo');
+		  $('#navbarCollapse ul li a').blur();
+			    $('#aCuadrosvivos').addClass('activo');
+			 }
+
+	if (y >= f) {
 		  $('#navbarCollapse ul li a').removeClass('activo');
 		  $('#navbarCollapse ul li a').blur();
 				$('#aContacto').addClass('activo');
@@ -126,9 +150,26 @@ $(document).ready(function() {
 	}
 
 $('.fancybox').fancybox({
+	     loop : false,
 		 helpers : {
 			  title : {
 			   type : 'inside'
 			  	},
 		 },
 	 });
+
+  function showMant() {
+    $('.blurc').addClass('blur');
+    document.getElementById('closeimg').style.display = 'block';
+    document.getElementById('mant').style.display = 'block';
+    $('lSPrev').style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+  };
+
+  function closePop() {
+    $('.blurc').removeClass('blur');
+    document.getElementById('mant').style.display = 'none';
+    document.getElementById('close').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
+    $('lSPrev').style.display = 'block';
+  };

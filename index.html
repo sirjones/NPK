@@ -7,6 +7,7 @@
   <meta name="keywords" content="jardin vertical, paisajismo, paisajismo urbano, jardinería, hidroponia, jardineria artistica">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/lightslider.css">
   <link rel="stylesheet" href="css/index.css">
   <title>NPK Arte Vegetal</title>
   <style>
@@ -16,8 +17,8 @@
     @keyframes play { 100% { background-position: -14823px; } }
     #bio { min-height: 100vh; background-color: #00a990; background-image: url(img/background/bio.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 4%; overflow: hidden;}
     #sobrenpk {position:relative;background-color: #00a990;min-height: 80vh;padding: 4%;background-image: url(img/background/fondob4.png);background-size: cover;overflow: hidden;}
-    #proyectos {position: relative; min-height:100vh;overflow: hidden;background-image: url(img/background/fondop3.png);background-size: cover;}
-    #contacto {position: relative; padding-top: 4vh; min-height: 90vh;background-image: url(img/background/backgroundcontact.jpg);background-size: cover;overflow: hidden;}
+    #jardines {position: relative; min-height:100vh;overflow: hidden;background-image: url(img/background/fondop3.png);background-size: cover;}
+    #contacto {position: relative; padding-top: 4vh; min-height: 90vh;background-image: url(img/background/backgroundcontact2.jpg);background-size: cover;overflow: hidden;}
   </style>
 </head>
 <body>
@@ -36,7 +37,8 @@
                 <li><a id="aInicio" href="#inicio" class="page-scroll headers" rel="relativeanchor">Inicio</a></li>
                 <li><a id="aBio" href="#bio" class="page-scroll headers" rel="relativeanchor">Bio</a></li>
                 <li><a id="aSobrenpk" href="#sobrenpk" class="page-scroll headers" rel="relativeanchor">Sobre NPK</a></li>
-                <li><a id="aProyectos" href="#proyectos" class="page-scroll headers" rel="relativeanchor">Proyectos</a></li>
+                <li><a id="aJardines" href="#jardines" class="page-scroll headers" rel="relativeanchor">Jardines</a></li>
+                <li><a id="aCuadrosvivos" href="#cuadrosvivos" class="page-scroll headers" rel="relativeanchor">Cuadros Vivos</a></li>
                 <li><a id="aContacto" href="#contacto" class="page-scroll headers" rel="relativeanchor">Contacto</a>
                 </li>
               </ul>
@@ -64,27 +66,27 @@
         <p>Equipo</p>
         <ul class="tarjetas">
           <li class="tarjeta">
-            <img src="img/equipo/tarjeta001.png" class="fototarjeta hvr-bob">
+            <a class="fancybox" href="img/equipo/tarjeta001.png"><img src="img/equipo/tarjeta001s.png" class="fototarjeta hvr-bob"></a>
                 <span><b>Ivo Lucian Oxagaray</b>
                 <br>Director</span>
           </li> 
           <li class="tarjeta">
-            <img src="img/equipo/tarjeta002.png" class="fototarjeta hvr-bob">
+             <a class="fancybox" href="img/equipo/tarjeta002.png"><img src="img/equipo/tarjeta002s.png" class="fototarjeta hvr-bob"></a>
                <span class="noil"><b>Gina Peiretti</b>
                 <br>Diseñadora</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta003.png" class="fototarjeta hvr-bob">
+           <a class="fancybox" href="img/equipo/tarjeta003.png"><img src="img/equipo/tarjeta003s.png" class="fototarjeta hvr-bob"></a>
                 <span class="noil"><b>Camila Benavente</b>
                 <br>Arquitecta</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta004.png" class="fototarjeta hvr-bob">
+           <a class="fancybox" href="img/equipo/tarjeta004.png"><img src="img/equipo/tarjeta004s.png" class="fototarjeta hvr-bob"></a>
                 <span class="noil"><b>Braian Oxagaray</b>
                 <br>Diseñador<br>multimedia</span>
           </li>
           <li class="tarjeta">
-          <img src="img/equipo/tarjeta005.png" class="fototarjeta hvr-bob">
+           <a class="fancybox" href="img/equipo/tarjeta005.png"><img src="img/equipo/tarjeta005s.png" class="fototarjeta hvr-bob"></a>
                 <span class="noil"><b>Sofia Chardin</b>
                 <br>Fotografa<br>desarrolladora web</span>
           </li>
@@ -101,7 +103,7 @@
          <p id="slogan"><span style="font-size:1.3em;">npk </span>te permite tener un jardin vertical en lugares donde parecía imposible</p>
         </div>  
         <div class="textPU animated">
-        <img class="" id="PUimg" href="http://www.paisajismourbano.com/"  target="_blank" src="img/logoPU2.svg"></a>
+        <a href="http://www.paisajismourbano.com/" target="_blank" ><img class="" id="PUimg" src="img/logoPU2.svg"></a>
           <p>Contamos con la validez y el soporte de Paisajismo Urbano, empresa líder con 10 años de experiencia en el diseño y construcción de jardines verticales en todo el mundo.</p> 
         </div>
       </div>
@@ -113,14 +115,14 @@
                 <p class="text-center"><b>Asesoría<br>paisajística</b></p>
             </li>
             <li class="servitem2 animated">
-              <img src="img/jardinesicon.svg" alt="..." class="imgps hvr-grow">
+              <a href="#jardines"><img src="img/jardinesicon.svg" alt="..." class="imgps hvr-grow">
                 <br>
-                <p class="text-center"><b>Jardines<br>verticales</b></p>
+                <p class="text-center"><b>Jardines<br>verticales</b></p></a>
               </li>
               <li class="servitem3 animated">
-              <img src="img/cuadrosicon.svg" alt="..." class="imgps hvr-grow">
+              <a href="cuadros.html"><img src="img/cuadrosicon.svg" alt="..." class="imgps hvr-grow">
                 <br>
-                <p class="text-center"><b>Cuadros<br>vivos</b></p>
+                <p class="text-center"><b>Cuadros<br>vivos</b></p></a>
             </li>
             <li class="servitem4 animated">
                 <img src="img/mantenimientoicon.svg" alt="..." class="imgps hvr-grow">
@@ -141,21 +143,21 @@
       </div>
     </div>
 <!-- PROYECTOS-->
-    <div id="proyectos">
+    <div id="jardines">
       <div id="myCarousel" class="carousel fdi-Carousel slide animated">
        <div class="carousel-inner onebyone-carosel">
           <div class="item active">
             <div class="project">
               <div class="thumbnail yami">
-               <img src="img/yami/NPKyami01s.jpg" alt="..." class="img-thumbnail">
+              <a class="fancybox btn galeria" rel="group9" href="img/yami/NPKyami01.jpg">
+               <img src="img/yami/NPKyami01s.jpg" alt="..." class="img-thumbnail"></a>
                <div class="caption text-center">
                  <h3>Pulmón de jardín</h3>
                  <p>Ubicado en el corazón de San Telmo, esta obra de 5m² se realizó con más de 200 plantas de 20 especies distintas.</p>
-                 <a class="fancybox btn galeria" rel="group9" href="img/yami/NPKyami01.jpg"></a>
                  <div class="hidden">
                      <a class="fancybox" rel="group9" title="" href="img/yami/NPKyami02.jpg"></a>
                      <a class="fancybox" rel="group9" title="" href="img/yami/NPKyami03.jpg"></a>
-                     <a class="fancybox fancybox.iframe" rel="group9" title="Gallery 1 - 4" href="https://www.youtube.com/embed/Zs_BFax3Jr0?autoplay=1&wmode=opaque"><img src="img/yami/NPKyami03.jpg" alt=""/></a>
+                     <a class="fancybox fancybox.iframe" rel="group9" title="Video" href="https://www.youtube.com/embed/Zs_BFax3Jr0?autoplay=1&wmode=opaque"><img src="img/yami/NPKyami03.jpg" alt=""/></a>
                  </div>
                </div>
               </div>
@@ -164,11 +166,12 @@
            <div class="item">
              <div class="project">
                <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group8" href="img/roberto/alrio01.jpg">
                  <img src="img/roberto/alrio01s.jpg" alt="..." class="img-thumbnail">
+                </a>
                    <div class="caption text-center">
                      <h3>Al río</h3>
                      <p>Jardín interior de 8m² concretado en un plazo de 3 días. Fueron plantadas más de 240 plantas.</p>
-                     <a class="fancybox btn galeria" rel="group8" href="img/roberto/alrio01.jpg"></a>
                      <div class="hidden">
                          <a class="fancybox" rel="group8" title="" href="img/roberto/alrio02.jpg"></a>
                          <a class="fancybox" rel="group8" title="" href="img/roberto/alrio03.jpg"></a>
@@ -181,11 +184,15 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group7" href="img/tito/tito001.jpg">
                   <img src="img/tito/tito001s.jpg" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>La familia primero</h3>
                       <p>Este muro vegetal de 6m² con varias especies de orquídeas y bromelias fue construído en Rosario, Santa Fe.</p>
-                      <a class="fancybox btn galeria" rel="group7" href="img/tito/tito001.jpg"></a>
+                      <div class="hidden">
+                          <a class="fancybox" rel="group7" title="" href="img/tito/tito002.jpg"></a>
+                      </div>
                    </div>
                 </div>
               </div>
@@ -193,11 +200,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group4" href="img/pj/puertojardin001.jpg">
                   <img src="img/pj/pj1.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Isósceles</h3>
                       <p>Este ecosistema vertical exterior de más de 4m² fue realizado para el estudio de paisajismo Puerto Jardín.</p>
-                      <a class="fancybox btn galeria" rel="group4" href="img/pj/puertojardin001.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group4" title="" href="img/pj/puertojardin002.jpg"></a>
                           <a class="fancybox" rel="group4" title="" href="img/pj/puertojardin003.jpg"></a>
@@ -211,11 +219,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group6" href="img/sabre/sabre01.png">
                     <img src="img/sabre/sabre01s.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Plantamos un árbol</h3>
                       <p>Revestimos una columna con más de 100 plantas de 17 especies distintas de sotobosque tropical.</p>
-                      <a class="fancybox btn galeria" rel="group6" href="img/sabre/sabre01.png"></a>
                     </div>
                 </div>
               </div>
@@ -223,11 +232,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group5" href="img/baldomero/baldomero01.jpg">
                     <img src="img/baldomero/baldomero01s.jpg" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Amigo Baldomero</h3>
                       <p>Este gran jardin de 6m² ubicado en Floresta fue encuadrado con diferentes maderas recicladas.</p>
-                      <a class="fancybox btn galeria" rel="group5" href="img/baldomero/baldomero01.jpg"></a>
                         <div class="hidden">
                           <a class="fancybox" rel="group5" title="" href="img/baldomero/baldomero3.jpg"></a>
                           <a class="fancybox" rel="group5" title="" href="img/baldomero/baldomero4.jpg"></a>
@@ -241,11 +251,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group3" href="img/aguilera/mario001.jpg">
                   <img src="img/aguilera/mario.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Familia Aguilera</h3>
                       <p>Jardin de interior de 4m² enmarcado en pinotea. Cuenta con más de 250 plantas de sotobosque tropical.</p>
-                      <a class="fancybox btn galeria" rel="group3" href="img/aguilera/mario001.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group3" title="" href="img/aguilera/mario002.jpg"></a>
                           <a class="fancybox" rel="group3" title="" href="img/aguilera/mario003.jpg"></a>
@@ -257,11 +268,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria" rel="group2" href="img/mandril/mandril003.jpg">
                   <img src="img/mandril/mandril004s.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Teatro Mandril</h3>
                       <p>Segundo hogar, segundo jardín. Que crece y florece con las innumerables actividades que allí germinan.</p>
-                      <a class="fancybox btn galeria" rel="group2" href="img/mandril/mandril003.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group2" title="" href="img/mandril/mandril001.jpg"></a>
                           <a class="fancybox" rel="group2" title="" href="img/mandril/mandril002.jpg"></a>
@@ -274,11 +286,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria"  rel="group1" href="img/muñiz/muñiz001.jpg">
                   <img src="img/muñiz/muñiz001s.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Hogar, dulce laboratorio</h3>
                       <p>Nuestro primer jardín vertical experimental, realizado en su mayoría con materiales reciclados.</p>
-                      <a class="fancybox btn galeria"  rel="group1" href="img/muñiz/muñiz001.jpg"></a>
                       <div class="hidden">
                           <a class="fancybox" rel="group1" title="" href="img/muñiz/muñiz002.jpg"></a>
                           <a class="fancybox" rel="group1" title="" href="img/muñiz/muñiz003.jpg"></a>
@@ -290,12 +303,13 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria"  rel="group10" href="img/arcade/arcade.png">
                   <img src="img/arcade/arcades.png" alt="..." class="img-thumbnail">
+                  </a>
                     <div class="caption text-center">
                       <h3>Arcade</h3>
                       <p>
                       Este hermoso jardín con ruedas fue diseñado especialmente como laboratorio de nuevas tecnologías.</p>
-                      <a class="fancybox btn galeria"  rel="group10" href="img/arcade/arcade.png"></a>
                       <div class="hidden">
                         <a class="fancybox" rel="group10" title="En el probamos nuevas tecnologías que queremos implementar a nuestros jardines." href="img/arcade/arcade01.jpg"></a>
                       </div>
@@ -306,11 +320,12 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria"  rel="group11" title="Un jardín en doble altura." href="img/nqn/nqn2.png">
                   <img src="img/nqn/nqn2s.png" alt="..." class="img-thumbnail">
+                </a>
                     <div class="caption text-center">
                       <h3>Alto Valle</h3>
                       <p>Más de 10m² de vegetación habitan la pared que conecta los dos pisos del hogar en la Ciudad de Neuquén.</p>
-                      <a class="fancybox btn galeria"  rel="group11" title="Un jardín en doble altura." href="img/nqn/nqn2.png"></a>
                       <div class="hidden">
                         <a class="fancybox" rel="group11" title="" href="img/nqn/nqn1.png"></a>
                         <a class="fancybox" rel="group11" title="Es un placer para nosotros realizar un jardín vertical sin precedentes en la ciudad de Neuquén." href="img/nqn/nqn3.png"></a>
@@ -318,6 +333,7 @@
                         <a class="fancybox" rel="group11" title="" href="img/nqn/nqn5.png"></a>
                         <a class="fancybox" rel="group11" title="" href="img/nqn/nqn6.png"></a>
                         <a class="fancybox" rel="group11" title="NPK agradece infinitamente a la familia Oxagaray-Bedini por toda la ayuda los consejos y el acompañamiento." href="img/nqn/nqn7.png"></a>
+                        <a class="fancybox fancybox.iframe" rel="group11" title="Video" href="http://www.youtube.com/embed/-G7yFCq8Cg4?autoplay=1&wmode=opaque&rel=0"><img src="" alt=""/></a>
                       </div>
                     </div>
                 </div>
@@ -326,25 +342,27 @@
             <div class="item">
               <div class="project">
                 <div class="thumbnail">
+                  <a class="fancybox btn galeria"  rel="group12" title="" href="img/resto/devoto.jpg">
                   <img src="img/resto/devotos.png" alt="..." class="img-thumbnail">
+                  </a>
                     <div class="caption text-center">
                       <h3>Pil-Pil</h3>
                       <p>Este particular jardín ubicado en Villa Devoto fue realizado en 2014 para el restaurante Pil-Pil.</p>
-                      <a class="fancybox btn galeria"  rel="group12" title="" href="img/resto/devoto.jpg"></a>
                       <div class="hidden">
                       </div>
                     </div>
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div  class="item">
               <div class="project">
                 <div class="thumbnail">
+                <a class="fancybox btn galeria"  rel="group13" title="" href="img/cuadritos/c1.jpg">
                   <img src="img/cuadritos/c1s.jpg" alt="..." class="img-thumbnail">
+                  </a>
                     <div class="caption text-center">
                       <h3>Cuadros de Crasas</h3>
-                      <p>Estos jardines verticales de mínimo mantenimiento se adaptan a todos los hogares por su compacto y natural diseño.</p>
-                      <a class="fancybox btn galeria"  rel="group13" title="" href="img/cuadritos/c1.jpg"></a>
+                      <p>Estos jardines de mínimo mantenimiento se adaptan a todos los hogares por su compacto y natural diseño</p>
                       <div class="hidden">
                         <a class="fancybox" rel="group13" title="" href="img/cuadritos/c2.jpg"></a>
                         <a class="fancybox" rel="group13" title="" href="img/cuadritos/c3.jpg"></a>
@@ -367,22 +385,77 @@
               </a>
             </div>
         </div>
+    <!-- Cuadros Vivos -->
+  <div id="cuadrosvivos">
+    <div class="blurc">
+      <section id="cuadrosText">
+          <h1><img id="cuadrosimg" src="img/cuadrosicon.svg">Cuadros Vivos</h1>
+          <p><br>Estos jardines verticales son una alternativa accesible de simple instalación y mínimo mantenimiento que embellecen los ambientes.
+          <br><br>
+          <small>De suculentas, aromáticas o plantas ornamentales. Medidas estándar: 10x15, 20x30 y 30x40cm. Realizamos cuadros especiales por encargo.</small></p>
+        <div id="btnsc"><button class="guia btn btn-success" onClick="showMant()">Guía de mantenimiento</button>
+        <a class="pedido btn btn-success" href="#contacto" rel="relativeanchor">Realizar pedido</a></div>
+        <big>Se adaptan a todos los espacios por su compacto y natural diseño. </big>
+      </section>
+      <section id="gallery">
+        <ul id="imageGallery">
+          <li data-thumb="img/cuadritos/c1t.jpg" data-src="img/cuadritos/c1t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c1.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c2t.jpg" data-src="img/cuadritos/c2t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c2.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c3t.jpg" data-src="img/cuadritos/c3t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c3.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c8t.jpg" data-src="img/cuadritos/c8t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c8.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c9t.jpg" data-src="img/cuadritos/c9t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c9.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c10t.jpg" data-src="img/cuadritos/c10t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c10.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c11t.jpg" data-src="img/cuadritos/c11t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c11.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c6t.jpg" data-src="img/cuadritos/c6t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c6.jpg"/>
+          </li>
+            <li data-thumb="img/cuadritos/c7t.jpg" data-src="img/cuadritos/c7t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c7.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c12t.jpg" data-src="img/cuadritos/c12t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c12.jpg"/>
+          </li>
+          <li data-thumb="img/cuadritos/c13t.jpg" data-src="img/cuadritos/c13t.jpg">
+              <img class="imgGallery" src="img/cuadritos/c13.jpg"/>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="mant">
+      <button id="closeimg" onClick="closePop()"></button>
+      <img id="imgmant" src="img/cuadritos/mantenimiento.jpg">
+    </div>
+  </div>
     <!-- Contacto -->
       <div id="contacto" rel="relativeanchor">
         <div id="contactos" rel="relativeanchor" class="animated">
             <h3>CONTACTO</h3>
             <br>
-            <p>Boedo, CP 1234<br>
+            <p>Boedo<br>
             Ciudad Autónoma de Buenos Aires<br>
             República Argentina<br>
             <br>
-            (+54) 011 155094-8904<br>
-            npkartevegetal@gmail.com</p><br>
+            <p>(+54) 011 155094-8904 <img class="icontact" src="img/iconb.png"></p>
+            <p>npkartevegetal@gmail.com <img class="icontact" src="img/icon.png"></p>
             <br>
             <h3>ENCONTRANOS EN</h3>
             <ul class="list-inline">
                 <li>
-                  <a href="https://www.facebook.com/NPK-Arte-Vegetal-1434037520142824/?fref=ts" target="_blank" class="btn facebook swing" ></a>
+                    <a href="https://www.facebook.com/NPK-Arte-Vegetal-1434037520142824/?fref=ts" target="_blank" class="btn facebook swing" ></a>
                 </li>
                 <li>
                     <a href="https://twitter.com/NPKartevegetal" target="_blank" class="btn twitter swing"></a>
@@ -451,6 +524,7 @@
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lightslider.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script src="js/contact_me.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
