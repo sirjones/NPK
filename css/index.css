@@ -7,12 +7,13 @@
   background-color: #65cabb;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(25, 130, 90);
+    background-color: #fff;
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #fff;
+  background-color: rgb(25, 130, 90);
 }
+
 a {
   text-decoration: none;
   color: #fff;
@@ -21,6 +22,8 @@ a {
   font-family: droid;
   src: url("../fonts/DroidSans.ttf");
 }
+
+
 
 body {
   background-color: #fff;
@@ -765,22 +768,41 @@ button {
 .hidden {
   display: none;
 }
+.shown {
+  display: block;
+}
 /* CAROUSEL */
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; margin-top: 15vh; margin-bottom: 5vh;}
+.carousel-inner.onebyone-carosel { margin: auto; margin-bottom: 5vh; }
 .onebyone-carosel .active.left { left: -33.33%; }
 .onebyone-carosel .active.right { left: 33.33%; }
 .onebyone-carosel .next { left: 33.33%; }
 .onebyone-carosel .prev { left: -33.33%; }
 
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+    position: absolute;
+    display: block;
+    background-image: url('../img/controls2.png');
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 90;
+    opacity: 0.7;
+    -webkit-transition: opacity 1s linear 0s;
+    transition: opacity 1s linear 0s;
+}
+.glyphicon-chevron-left:hover, .glyphicon-chevron-right:hover {
+    opacity: 1;
+}
 .glyphicon-chevron-left {
-                        background-image:url(../img/arrowl.svg);
-                        background-repeat: no-repeat;
-                        }
-
-.glyphicon-chevron-right{
-                        background-image:url(../img/arrowr.svg);
-                        background-repeat: no-repeat; 
-                        }
+    background-position: 0 0;
+    left: 20px;
+}
+.glyphicon-chevron-right {
+    background-position: -32px 0;
+    right: 20px;
+}
 
 
 #myCarousel {
@@ -793,14 +815,10 @@ button {
   position: relative;
   background-color: none;
 }
-.carousel {
-  position: relative;
-}
+
 .project {
   padding: 0;
   margin: 2vh 1vw 2vh 1vw;
-  float: left;
-  width: 30%;
 }
 
 .img-responsive,
@@ -813,17 +831,19 @@ button {
   height: auto;
 }
 .thumbnail>a>img{
-  width: 90%;
+  width: 87%;
   background-color: white;
+  /*border: solid 4px rgba(25, 130, 90,0.8);*/
+  box-shadow: 0 0 25px 3px rgba(25, 130, 90,0.8);
   padding: 2%;
-  padding-bottom: 6%;
-  margin-top: 2%;
 }
+
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
   height: auto;
   padding: 4px;
+  margin:20px;
   line-height: 1.42857143;
   border: 1px solid #ddd;
   -webkit-transition: all .2s ease-in-out;
@@ -832,16 +852,34 @@ button {
 }
 
 .thumbnail {
-  background-color: rgba(25, 130, 90,1);
   text-align: center;
   display: block;
-  padding: 2%;
   line-height: 1.42857143;
-  border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+}
+#tags {
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+}
+
+span {
+  white-space:nowrap;
+
+}
+
+.tag {
+  background-color: rgba(25, 130, 90,0.8);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8em;
+  padding: 5px;
+  margin-right: 5px;
+  line-height: 250%;
+
 }
 
 .item {
@@ -865,34 +903,67 @@ a.thumbnail.active {
   border-color: #337ab7;
 }
 
-.caption {
+#textProject {
   position: relative;
-  height: 39%;
-  padding-top: 2%
+  float: right;
+  width: 30%;
+  height: 80vh;
+  display: inline-block;
+  color: #000;
+  padding-top: 2%;
 }
 
-.caption h3 {
+#textProject h3 {
   font-size: 1.3em;
-  color: white;
+  color: #0A6A46;
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.caption p {
+#textProject p {
+  font-weight: bold;
   font-size: 0.9em;
+  color: #0A6A46;
   text-align: justify;
   padding: 5%;
-  color: white;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-@media (max-width: 801px) {
-  #jardines { height: auto; background-image: url(../img/background/fondop3min.png); }
-  .project {width: 90%; margin: auto; float: none;}
-  .item, .item .active, .thumbnail {margin: auto;}
+.galeria {
+  float: left;
+  width: 65%;
+  display: inline-block;
 }
 
+@media (max-width: 801px) {
+  .grabbable { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
+  .grabbable:active { cursor: grabbing; cursor: -moz-grabbing; cursor: -webkit-grabbing; }
+  #jardines { height: auto; background-image: url(../img/background/fondop3min.png); }
+  .project {width: 90%; margin: auto; float: none;}
+  .carousel-inner.onebyone-carosel {margin-top: 10%;}
+  .galeria {width: 95%}
+  #textProject {width: 100%; height: auto;}
+  #tags {position: relative;}
+  .item, .item .active, .thumbnail {margin: auto;}
+}
+.lSAction2 > a {
+    width: 32px;
+    display: block;
+    top: 50%;
+    height: 32px;
+    background-image: url('../img/controls2.png');
+    cursor: pointer;
+    position: absolute;
+    z-index: 90;
+    margin-top: -16px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+
+.carousel {
+  position: relative;
+}
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -901,15 +972,14 @@ a.thumbnail.active {
 .carousel-inner > .item {
   position: relative;
   display: none;
-  -webkit-transition: 2s ease-in-out left;
-       -o-transition: 2s ease-in-out left;
-          transition: 2s ease-in-out left;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
 }
-@media (min-width: 801px) {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
@@ -924,41 +994,6 @@ a.thumbnail.active {
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
     left: 0;
-    border: none;
-    -webkit-transform: translate3d(32%, 0, 0);
-            transform: translate3d(32%, 0, 0);
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-    left: 0;
-    -webkit-transform: translate3d(-32%, 0, 0);
-            transform: translate3d(-32%, 0, 0);
-  }
-  .carousel-inner > .item.next.left,
-  .carousel-inner > .item.prev.right,
-  .carousel-inner > .item.active {
-    left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}}
-
-@media (max-width: 801px) {
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner > .item {
-    -webkit-transition: -webkit-transform .6s ease-in-out;
-         -o-transition:      -o-transform .6s ease-in-out;
-            transition:         transform .6s ease-in-out;
-
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-  }
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-    left: 0;
-    border: none;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
@@ -975,7 +1010,7 @@ a.thumbnail.active {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-}}
+}
 .carousel-inner > .active,
 .carousel-inner > .next,
 .carousel-inner > .prev {
@@ -1020,31 +1055,18 @@ a.thumbnail.active {
   filter: alpha(opacity=50);
   opacity: .5;
 }
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(25, 130, 90, .3) 0%, rgba(25, 130, 90, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(25, 130, 90, .3) 0%, rgba(25, 130, 90, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 130, 90, .3)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(25, 130, 90, .3) 0%, rgba(25, 130, 90, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=0.5);
-  background-repeat: repeat-x;
-}
+
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(25, 130, 90, .0001) 0%, rgba(25, 130, 90, .5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(25, 130, 90, .0001) 0%, rgba(25, 130, 90, .5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 130, 90, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(25, 130, 90, .0001) 0%, rgba(25, 130, 90, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
 }
 .carousel-control:hover,
 .carousel-control:focus {
   color: #fff;
   text-decoration: none;
-  filter: alpha(opacity=90);
+  filter: alpha(opacity=40);
   outline: 0;
-  opacity: .9;
+  opacity: .5;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
@@ -1058,15 +1080,12 @@ a.thumbnail.active {
 }
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
-  left: 50%;
+  left: 25%;
   margin-left: -10px;
 }
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .glyphicon-chevron-left {
-    height: 30px;
-    width: 30px;
-  right: 50%;
+.carousel-control .glyphicon-chevron-right {
+  right: 25%;
   margin-right: -10px;
 }
 .carousel-control .icon-prev,
@@ -1076,7 +1095,12 @@ a.thumbnail.active {
   font-family: serif;
   line-height: 1;
 }
-
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
 .carousel-indicators {
   position: absolute;
   bottom: 10px;

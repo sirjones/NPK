@@ -31,13 +31,28 @@ $(document).ready(function() {
 	   	var offset = startchange.offset();
 	   	$(document).scroll(function() {
 	      scroll_start = $(this).scrollTop();
-	      if(scroll_start > $('#bio').offset().top - 150) {
+	      if(scroll_start > $('#jardines').offset().top - 150) {
 	        	$('#nav').css('background-color', 'rgba(25, 130, 90,0.9)'),
 	        	$('.navbar-header').css('background-color', 'rgb(25, 130, 90)');
 	       } else {
 	          $('#nav').css('background-color', 'transparent');
 	       }
 	  	});
+
+	    $('#imageGallery2').lightSlider({
+	        gallery:true,
+	        item:1,
+	        loop:true,
+	        thumbItem:0,
+	        slideMargin:0,
+	        enableDrag: false,
+	        currentPagerPosition:'left',
+	        onSliderLoad: function(el) {
+	            el.lightGallery({
+	                selector: '#imageGallery2 .lslide'
+	            });
+	        }   
+	    }); 
 
 	    $('#imageGallery').lightSlider({
 	        gallery:true,
@@ -52,7 +67,7 @@ $(document).ready(function() {
 	                selector: '#imageGallery .lslide'
 	            });
 	        }   
-	    }); 
+	    });
 	});
 
    $(window).scroll(function () {
@@ -132,6 +147,7 @@ $(document).ready(function() {
 		tamañoGrande = true;
 	}
 
+/*
 	if(tamañoGrande){
 		$('.carousel .item').each(function(){
 			  var next = $(this).next();
@@ -148,6 +164,7 @@ $(document).ready(function() {
 			  }
 		});
 	}
+*/
 
 $('.fancybox').fancybox({
 	     loop : false,
